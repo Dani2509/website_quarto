@@ -40,34 +40,6 @@
     color: white;
 }
 
-.social-share a.reddit {
-  border-color: #FF4500;
-    color: #FF4500;
-}
-.social-share a.reddit:hover {
-  background: #FF4500;
-    color: white;
-}
-
-.social-share a.stumbleupon {
-  border-color: #EB471D;
-    color: #EB471D;
-}
-
-.social-share a.stumbleupon:hover {
-  background: #EB471D;
-    color: white;
-}
-
-.social-share a.tumblr {
-  border-color: #35465C;
-    color: #35465C;
-}
-.social-share a.tumblr:hover {
-  background: #35465C;
-    color: white;
-}
-
 .social-share a.linkedin {
   border-color: #2867B2;
     color: #2867B2;
@@ -88,12 +60,3 @@
     color: white;
 }
 
-.social-share a.mastodon {
-  border-color: #6364FF;
-    color: #6364FF;
-}
-
-.social-share a.mastodon:hover {
-  background: #6364FF;
-    color: white;
-}

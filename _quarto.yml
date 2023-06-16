@@ -6,7 +6,7 @@ website:
   title: "**La Biocolombianita**"
   page-footer:
     background: "#F5F7F7"
-    center: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
   navbar:
     logo: logo.png
     background: "#6297CD"

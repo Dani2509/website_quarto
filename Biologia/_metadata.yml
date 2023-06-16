@@ -11,6 +11,6 @@ title-block-banner: true
 toc: false
 
 # Include something after every blog post with hand-made html-file
-# format:
-# html:
-#    include-after-body:
+format:
+  html:
+    include-after-body: ../body_footer.html
