@@ -31,14 +31,11 @@ color: #55acee;
 .linkedin {
 color: #0077b5;
 }
-.whatsapp {
-color: #25D366;
-}
 .telegram {
 color: #229ED9;
 }
-.facebook, .twitter, .linkedin, .whatsapp, .telegram {
-opacity: 0.6;
+.facebook, .twitter, .linkedin, .telegram {
+opacity: 0.4;
 }
 .facebook:hover, .twitter:hover, .linkedin:hover, .whatsapp:hover, .telegram:hover {
 opacity: 0.9;
@@ -53,8 +50,6 @@ opacity: 0.9;
 <a class="twitter" target="blank"><i class="fab fa-twitter"></i></a>
 <!-- linkedin -->
 <a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
-<!-- whatsapp -->
-<a class="whatsapp" target="blank"><i class="fab fa-whatsapp"></i></a>
 <!-- telegram -->
 <a class="telegram" target="blank"><i class="fab fa-telegram"></i></a>
 </div>
@@ -68,8 +63,6 @@ const twitter = document.querySelector('.twitter');
 twitter.href = `http://twitter.com/share?&url=${link}&text=${msg}&hashtags=javascript,programming`;
 const linkedIn = document.querySelector('.linkedin');
 linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
-const whatsapp = document.querySelector('.whatsapp');
-whatsapp.href = `https://api.whatsapp.com/send?text=${msg}: ${link}`;
 const telegram = document.querySelector('.telegram');
 telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
 </script>
