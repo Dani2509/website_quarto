@@ -9,3 +9,8 @@ title-block-banner: true
 
 # no table of contents
 toc: false
+
+# Include something after every blog post with hand-made html-file
+# format:
+# html:
+#    include-after-body:
