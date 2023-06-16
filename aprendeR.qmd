@@ -1,0 +1,16 @@
+---
+title: "**Aprende R**"
+subtitle: "Lecciones y pruebas estadísticas con R y Rstudio" 
+listing:
+  contents: aprendeR
+  feed: true
+  sort: "date desc"
+  type: default 
+  date-format: medium
+  categories: numbered
+  sort-ui: false
+  filter-ui: true
+  fields: [image, date, title, subtitle, categories, author]  
+page-layout: full
+title-block-banner: aprendeR/forblock2.png
+---

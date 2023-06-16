@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  page-navigation: true
+  title: "**La Biocolombianita**"
+  page-footer:
+    background: "#F5F7F7"
+    center: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+  navbar:
+    logo: logo.png
+    background: "#6297CD"
+    
+    right:
+      - href: index.qmd
+        text: Inicio
+      - href: Biologia.qmd
+        text: Biología
+      - href: aprendeR.qmd
+        text: Aprende R
+      - icon: twitter
+        href: https://twitter.com/Daniela_Osqui
+      - icon: instagram
+        href: https://www.instagram.com/labiocolombianita/
+      - icon: github
+        href: https://github.com/Dani2509
+
+format:
+  html:
+    theme: Lumen
+    css: styles.css
+    toc: true
+
+
+

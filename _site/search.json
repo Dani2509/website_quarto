@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "aprendeR/post1/post1.html",
+    "href": "aprendeR/post1/post1.html",
+    "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
+    "section": "",
+    "text": "Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas."
+  },
+  {
+    "objectID": "aprendeR.html",
+    "href": "aprendeR.html",
+    "title": "Aprende R",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\n\n\n\n\nTips\n\n\nbases de datos\n\n\n \n\n\n\n\nJun 10, 2023\n\n\nDaniela O.\n\n\n0 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Biologia/2023-06-10-ciencia/index.html",
+    "href": "Biologia/2023-06-10-ciencia/index.html",
+    "title": "La ciencia basada en hechos observables",
+    "section": "",
+    "text": "Ilustración de Piyapong Saydaung\n\n\nLa vista siempre ha jugado un papel fundamental al momento de hacer ciencia, pero también es cierto que debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos. Dos personas podrían estar mirando el mismo fenómeno, pero ser procesado de formas diferentes por cada individuo de acuerdo con sus experiencias previas y su manera de pensar. Por eso la colaboración científica y el trabajo en equipo se torna tan importante a la hora de generar conocimiento. Hay muchos factores que influyen al momento de hacer una observación puesto que lo que ve un observador resulta afectado por su conocimiento y experiencia, de ahí que la ciencia se deriva de los hechos observables, de las cosas que podemos ver, oír y tocar, mas no en la imaginación especulativa. De esta idea surge dos escuelas filosóficas que formalizan este pensamiento, los empiristas1 y positivistas2. Para el empirismo la experiencia es la base de todo conocimiento, no solo en cuanto a su origen sino también en cuanto a su contenido. Se parte del mundo sensible para formar los conceptos y su justificación. Los positivistas también creen que el conocimiento se deriva exclusivamente de la experiencia de los fenómenos naturales difiriendo con los empiristas en que el conocimiento auténtico es conocimiento científico. Sin embargo, este aspecto está implícito en la constatación de que uno tiene que aprender para llegar a ser competente en ciencia.\nA pesar de esto uno como persona debe estar abierto a nuevos conocimientos, debe estar dispuesto a observar, más que a ver, porque cuando vemos no significa que analicemos lo que hay en nuestro alrededor, pasamos por alto cosas que creemos indispensables pero que pueden marcar la diferencia. Por consiguiente, la ciencia basada en los hechos solo puede ser verificada gracias al intercambio de información.\nBibliografía\n\nBaird, Forrest E.; Walter Kaufmann (2008). From Plato to Derrida. Upper Saddle River, New Jersey: Pearson Prentice Hall\nJohn J. Macionis, Linda M. Gerber, Sociology, Seventh Canadian Edition, Pearson Canada\nChalmers, A. (1976). ¿Qué es esa cosa llamada ciencia? Reino Unido. Ed, Universidad de Queensland\n\n\n\n\n\nFootnotes\n\n\nEl empirismo es una doctrina filosófica y epistemológica que alude que todo conocimiento que posee o adquiere el hombre es producto de la experiencia↩︎\nAfirma que el único conocimiento auténtico es el conocimiento científico↩︎"
+  },
+  {
+    "objectID": "Biologia.html",
+    "href": "Biologia.html",
+    "title": "Biología",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nLa ciencia basada en hechos observables\n\n\n1 min\n\n\n\nCiencia\n\n\nArticulos\n\n\n\nDebemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos\n\n\n\nDaniela O.\n\n\nJun 10, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Follow me",
+    "section": "",
+    "text": "Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.\n\nSi una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)\n\nPara cualquier inquietud escríbeme a: labiocolombianita@gmail.com"
+  }
+]

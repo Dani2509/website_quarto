@@ -1,0 +1,11 @@
+---
+title: "¿Cómo abrir bases de datos en R y observar su estructura?"
+description: |
+  Bases de datos en formato .csv, .xlsx, .txt
+author:
+  - name: Daniela O. 
+date: 2023-06-10
+categories: [Tips, bases de datos]
+---
+
+Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas. 

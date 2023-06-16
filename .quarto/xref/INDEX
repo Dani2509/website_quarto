@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "60c27e96"
+  },
+  "about.qmd": {
+    "about.html": "8ecb5c1c"
+  },
+  "Biologia/2023-06-10-ciencia/index.qmd": {
+    "index.html": "03c74f0b"
+  },
+  "Biologia.qmd": {
+    "Biologia.html": "f357c40b"
+  },
+  "aprendeR.qmd": {
+    "aprendeR.html": "84a5136b"
+  },
+  "aprendeR/post1/post1.qmd": {
+    "post1.html": "9e81e891"
+  }
+}

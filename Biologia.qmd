@@ -1,0 +1,20 @@
+---
+title: "**Biología**"
+subtitle: "**Divulgación, lecciones y avances notables en biología**" 
+listing:
+  contents: Biologia
+  feed: true
+  sort: "date desc"
+  type: grid
+  grid-item-border: true
+  grid-item-align: left
+  max-description-length: 175
+  date-format: medium
+  categories: numbered
+  sort-ui: true
+  filter-ui: true
+  fields: [image, date, title, description, categories, author, reading-time]  
+page-layout: full
+title-block-banner: Biologia/forblock1.png
+
+---
