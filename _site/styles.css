@@ -1,2 +1,23 @@
 /* css styles */
 
+.quarto-title-banner {
+    margin-bottom: 1em;
+    color: #fff;
+    background: #6297cd;
+}
+
+#title-block-header.quarto-title-block.default .description>p, #title-block-header.quarto-title-block.default .abstract>p {
+    font-size: 1.0em;
+}
+
+
+element.style {
+}
+.quarto-title .quarto-categories .quarto-category {
+    padding: 0.25em 0.75em;
+    font-size: .65em;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: 0.25rem;
+    opacity: .9;
+}

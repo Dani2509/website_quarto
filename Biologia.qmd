@@ -11,7 +11,7 @@ listing:
   max-description-length: 175
   date-format: medium
   categories: numbered
-  sort-ui: true
+  sort-ui: false
   filter-ui: true
   fields: [image, date, title, description, categories, author, reading-time]  
 page-layout: full

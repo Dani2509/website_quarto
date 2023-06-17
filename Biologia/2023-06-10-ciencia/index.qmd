@@ -1,5 +1,5 @@
 ---
-title: "La ciencia basada en hechos observables"
+title: "**La ciencia basada en hechos observables**"
 description: |
   Debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos
 author:
@@ -7,9 +7,10 @@ author:
 date: 2023-06-10
 categories: [Ciencia, Articulos]
 image: portada1.png
+title-block-banner: true
 ---
 
-![Ilustración de Piyapong Saydaung](boy.jpg){style="float: right;" width=250}
+![](boy.jpg){style="float: right;" width=250}
 
 La vista siempre ha jugado un papel fundamental al momento de hacer ciencia, pero también es cierto que debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos. Dos personas podrían estar mirando el mismo fenómeno, pero ser procesado de formas diferentes por cada individuo de acuerdo con sus experiencias previas y su manera de pensar. Por eso la colaboración científica y el trabajo en equipo se torna tan importante a la hora de generar conocimiento. Hay muchos factores que influyen al momento de hacer una observación puesto que lo que ve un observador resulta afectado por su conocimiento y experiencia, de ahí que la ciencia se deriva de los hechos observables, de las cosas que podemos ver, oír y tocar, mas no en la imaginación especulativa. De esta idea surge dos escuelas filosóficas que formalizan este pensamiento, los **empiristas**[^1] y **positivistas**[^2]. Para el empirismo la experiencia es la base de todo conocimiento, no solo en cuanto a su origen sino también en cuanto a su contenido. Se parte del mundo sensible para formar los conceptos y su justificación. Los positivistas también creen que el conocimiento se deriva exclusivamente de la experiencia de los fenómenos naturales difiriendo con los empiristas en que el conocimiento auténtico es conocimiento científico. Sin embargo, este aspecto está implícito en la constatación de que uno tiene que aprender para llegar a ser competente en ciencia.
 
