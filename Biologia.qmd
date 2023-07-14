@@ -1,6 +1,6 @@
 ---
-title: "**Biología**"
-subtitle: "**Divulgación, lecciones y avances notables en biología**" 
+title: "**Divulgación en Biología**"
+subtitle: "" 
 listing:
   contents: Biologia
   feed: true
