@@ -7,7 +7,7 @@ author:
 date: 2023-06-10
 categories: [Ciencia, Articulos]
 image: portada1.png
-title-block-banner: true
+title-block-banner: false
 ---
 
 ![](boy.jpg){style="float: right;" width=250}

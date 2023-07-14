@@ -11,13 +11,14 @@ website:
     logo: logo.png
     background: "#6297CD"
     
-    right:
+    left:
       - href: index.qmd
         text: Inicio
       - href: Biologia.qmd
         text: Biología
       - href: aprendeR.qmd
         text: Aprende R
+    right:
       - icon: twitter
         href: https://twitter.com/Daniela_Osqui
       - icon: instagram

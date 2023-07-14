@@ -6,8 +6,19 @@
     background: #6297cd;
 }
 
+.quarto-title-banner {
+    padding-top: 2.7em;
+    padding-bottom: 2.5em;
+}
+
 #title-block-header.quarto-title-block.default .description>p, #title-block-header.quarto-title-block.default .abstract>p {
     font-size: 1.0em;
+}
+
+#title-block-header {
+    margin-block-end: 3rem;
+    position: relative;
+    margin-top: px;
 }
 
 
@@ -20,4 +31,26 @@ element.style {
     border: solid 1px;
     border-radius: 0.25rem;
     opacity: .9;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+:root {
+    --quarto-body-bg: #fff;
+    --quarto-body-color: #222;
+    --quarto-text-muted: #6c757d;
+    --quarto-border-color: #fff;
+    --quarto-border-width: 1px;
+    --quarto-border-radius: 0.25rem;
 }
