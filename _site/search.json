@@ -4,7 +4,7 @@
     "href": "aprendeR/post1/post1.html",
     "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
     "section": "",
-    "text": "Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.\n\nAbriendo bases de datos"
+    "text": "<<<<<<< HEAD Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.\n\nAbriendo bases de datos\n======= \nAntes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas. >>>>>>> 5d7f85ed9fdd217ebd8998b6d52a8691c689d086"
   },
   {
     "objectID": "aprendeR.html",
