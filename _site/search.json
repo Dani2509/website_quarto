@@ -4,7 +4,7 @@
     "href": "aprendeR/post1/post1.html",
     "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
     "section": "",
-    "text": "<<<<<<< HEAD Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.\n\nAbriendo bases de datos\n======= \nAntes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas. >>>>>>> 5d7f85ed9fdd217ebd8998b6d52a8691c689d086"
+    "text": "Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas."
   },
   {
     "objectID": "aprendeR.html",
@@ -33,5 +33,12 @@
     "title": "Follow me",
     "section": "",
     "text": "Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.\n\nSi una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)\n\nPara cualquier inquietud escríbeme a: labiocolombianita@gmail.com"
+  },
+  {
+    "objectID": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
+    "href": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
+    "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
+    "section": "Abriendo bases de datos",
+    "text": "Abriendo bases de datos"
   }
 ]

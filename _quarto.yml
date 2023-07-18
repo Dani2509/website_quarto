@@ -7,6 +7,13 @@ website:
   page-footer:
     background: "#F5F7F7"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
+    right: 
+      - icon: twitter
+        href: https://twitter.com/Daniela_Osqui
+      - icon: instagram
+        href: https://www.instagram.com/labiocolombianita/
+      - icon: github
+        href: https://github.com/Dani2509
   navbar:
     logo: logo.png
     background: "#6297CD"
@@ -25,7 +32,7 @@ website:
         href: https://www.instagram.com/labiocolombianita/
       - icon: github
         href: https://github.com/Dani2509
-
+    cookie-consent: true
 format:
   html:
     theme: Lumen
