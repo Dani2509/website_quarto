@@ -37,10 +37,23 @@ También puedes abrir bases de datos escribiendo el siguiente código en tu scri
 ### Bases de datos de Excel
 
 ```{r}
+#| eval: false
+
 library(readxl)
 
-# pegas la ruta en la que esta el documento 
-setwd("C:\Users\fernando ospino\Pictures\Iris.xlsx") # <1>
+# pegas la ruta de la carpeta en donde esta el archivo 
+setwd("ruta de la carpeta donde esta el archivo")
 ```
 
-1.  Cuando pegas la ruta cambia el signo por este /
+Cuando pegas la ruta cambia el signo `\` por este `/`
+
+```{r}
+# luego ejecutas el siguiente comando
+datos<- read_excel("iris.xlsx") # <1>
+
+# observar la estructura de nuetro dataset
+str(datos) # <2>
+```
+
+1.  Entre paréntesis agregas el nombre de la base de datos
+2.  Otra opción para observar la estructura es `glimpse()`

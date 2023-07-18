@@ -1,0 +1,14 @@
+{
+  "hash": "0d7cf605ec9f88b70bcaea899d9d5559",
+  "result": {
+    "markdown": "---\ntitle: \"**¿Cómo abrir bases de datos en R y observar su estructura?**\"\ndescription: |\n  *Bases de datos en formato .csv, .xlsx, .txt*\nauthor:\n  - name: Daniela O. \ndate: 2023-06-10\ncategories: [Tips, bases de datos]\nimage: open_data.jpg\ntitle-block-banner: false\n---\n\n\n![](open_data.jpg)\n\nAntes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.\n\n## Abriendo bases de datos\n\nEn el panel del `Enviroment` nos dirigimos a la opción `Import Dataset` y seleccionamos el tipo de archivo, si es un documento `.xlsx, .txt o csv`. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.\n\n![](fig-1.png)\n\nEn esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.\n\n![](fig-2.png)\n\n::: callout-note\n## Nota\n\nCuando le das en `Import Dataset` `From text (base)` es para archivos en formato `.txt` y `From Text (readr)` es para archivos .`csv` en el que las columnas están separadas por puntos y no comas.\n:::\n\n## Abriendo bases de datos con código\n\nTambién puedes abrir bases de datos escribiendo el siguiente código en tu script\n\n### Bases de datos de Excel\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(readxl)\n\n# pegas la ruta de la carpeta en donde esta el archivo \nsetwd(\"ruta de la carpeta donde esta el archivo\") # <1>\n\n# luego ejecutas el siguiente comando\ndatos<- read_excel(\"iris.xlsx\") # <2>\n```\n:::\n\n1. Cuando pegas la ruta cambia el signo `\\` por este `/`\n2. entre parentesis agregas el nombre el de la base de datos. También si es    un Excel con varias hojas, agregas sheet= N° de la hoja que quieres    abrir. \n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

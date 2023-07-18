@@ -7,6 +7,20 @@
     "text": "Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas."
   },
   {
+    "objectID": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
+    "href": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
+    "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
+    "section": "Abriendo bases de datos",
+    "text": "Abriendo bases de datos\nEn el panel del Enviroment nos dirigimos a la opción Import Dataset y seleccionamos el tipo de archivo, si es un documento .xlsx, .txt o csv. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.\n\nEn esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.\n\n\n\n\n\n\n\nNota\n\n\n\nCuando le das en Import Dataset From text (base) es para archivos en formato .txt y From Text (readr) es para archivos .csv en el que las columnas están separadas por puntos y no comas."
+  },
+  {
+    "objectID": "aprendeR/post1/post1.html#abriendo-bases-de-datos-con-código",
+    "href": "aprendeR/post1/post1.html#abriendo-bases-de-datos-con-código",
+    "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
+    "section": "Abriendo bases de datos con código",
+    "text": "Abriendo bases de datos con código\nTambién puedes abrir bases de datos escribiendo el siguiente código en tu script\n\nBases de datos de Excel\n\nlibrary(readxl)\n\n# pegas la ruta de la carpeta en donde esta el archivo \nsetwd(\"ruta de la carpeta donde esta el archivo\") # <1>\n\n# luego ejecutas el siguiente comando\ndatos<- read_excel(\"iris.xlsx\") # <2>\n\n\nCuando pegas la ruta cambia el signo \\ por este /\nentre parentesis agregas el nombre el de la base de datos. También si es un Excel con varias hojas, agregas sheet= N° de la hoja que quieres abrir."
+  },
+  {
     "objectID": "aprendeR.html",
     "href": "aprendeR.html",
     "title": "Aprende R",
@@ -33,12 +47,5 @@
     "title": "Follow me",
     "section": "",
     "text": "Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.\n\nSi una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)\n\nPara cualquier inquietud escríbeme a: labiocolombianita@gmail.com"
-  },
-  {
-    "objectID": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
-    "href": "aprendeR/post1/post1.html#abriendo-bases-de-datos",
-    "title": "¿Cómo abrir bases de datos en R y observar su estructura?",
-    "section": "Abriendo bases de datos",
-    "text": "Abriendo bases de datos"
   }
 ]
