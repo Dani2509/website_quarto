@@ -16,4 +16,31 @@ Antes de empezar con la exploración de los datos. Debemos aprender a leer los d
 
 ## Abriendo bases de datos
 
-En el panel del `Enviroment` nos dirigimos a la opción `Import Dataset` y seleccionamos el tipo de archivo, si es un documento `.xlsx, .txt o csv`. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar (Observa el ejemplo en la @fig-1)
+En el panel del `Enviroment` nos dirigimos a la opción `Import Dataset` y seleccionamos el tipo de archivo, si es un documento `.xlsx, .txt o csv`. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.
+
+![](fig-1.png)
+
+En esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.
+
+![](fig-2.png)
+
+::: callout-note
+## Nota
+
+Cuando le das en `Import Dataset` `From text (base)` es para archivos en formato `.txt` y `From Text (readr)` es para archivos .`csv` en el que las columnas están separadas por puntos y no comas.
+:::
+
+## Abriendo bases de datos con código
+
+También puedes abrir bases de datos escribiendo el siguiente código en tu script
+
+### Bases de datos de Excel
+
+```{r}
+library(readxl)
+
+# pegas la ruta en la que esta el documento 
+setwd("C:\Users\fernando ospino\Pictures\Iris.xlsx") # <1>
+```
+
+1.  Cuando pegas la ruta cambia el signo por este /
