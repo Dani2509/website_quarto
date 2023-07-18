@@ -10,6 +10,13 @@ image: open_data.jpg
 title-block-banner: false
 ---
 
+<<<<<<< HEAD
+Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas. 
+
+# Abriendo bases de datos 
+
+=======
 ![](open_data.jpg){}
 
 Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas. 
+>>>>>>> 5d7f85ed9fdd217ebd8998b6d52a8691c689d086
