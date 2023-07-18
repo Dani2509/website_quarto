@@ -8,4 +8,8 @@ freeze: true
 title-block-banner: true
 
 # no table of contents
-toc: false
+toc: true
+
+comments:
+  giscus:
+    repo: dani2509/website_quarto
