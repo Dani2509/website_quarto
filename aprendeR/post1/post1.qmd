@@ -1,7 +1,7 @@
 ---
 title: "**¿Cómo abrir bases de datos en R y observar su estructura?**"
 description: |
-  *Bases de datos en formato .csv, .xlsx, .txt*
+  Bases de datos en formato .csv, .xlsx, .txt
 author:
   - name: Daniela O. 
 date: 2023-06-10
