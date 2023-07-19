@@ -34,7 +34,7 @@ Cuando le das en `Import Dataset` `From text (base)` es para archivos en formato
 
 También puedes abrir bases de datos escribiendo el siguiente código en tu script
 
-### Bases de datos de Excel
+### Datos de Excel
 
 ```{r}
 #| eval: false
@@ -57,3 +57,21 @@ str(datos) # <2>
 
 1.  Entre paréntesis agregas el nombre de la base de datos
 2.  Otra opción para observar la estructura es `glimpse()`
+
+### Datos CSV
+
+```{r}
+library(tidyverse)
+datos<- read.csv2("iris.csv", header = TRUE)
+```
+
+### Datos en extensión .txt
+
+```{r}
+data <- read.table(file = "iris.txt", header = TRUE)
+head(data) # <3> 
+```
+
+3.  Con este comando puedes observar las 6 primeras filas del dataset
+
+Espero que te haya servido de ayuda estos consejos 😀
