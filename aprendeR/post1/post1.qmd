@@ -42,12 +42,13 @@ También puedes abrir bases de datos escribiendo el siguiente código en tu scri
 library(readxl)
 
 # pegas la ruta de la carpeta en donde esta el archivo 
-setwd("ruta de la carpeta donde esta el archivo")
+# setwd("ruta de la carpeta donde esta el archivo")
 ```
 
 Cuando pegas la ruta cambia el signo `\` por este `/`
 
 ```{r}
+library(readxl)
 # luego ejecutas el siguiente comando
 datos<- read_excel("iris.xlsx") # <1>
 
