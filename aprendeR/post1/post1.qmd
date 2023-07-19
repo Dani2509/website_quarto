@@ -30,6 +30,7 @@ En esta ventana emergente, una vez que tengamos seleccionada nuestra base de dat
 Cuando le das en `Import Dataset` `From text (base)` es para archivos en formato `.txt` y `From Text (readr)` es para archivos .`csv` en el que las columnas están separadas por puntos y no comas.
 :::
 
+
 ## Abriendo bases de datos con código
 
 También puedes abrir bases de datos escribiendo el siguiente código en tu script
