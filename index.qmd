@@ -1,6 +1,6 @@
 ---
 title: "Follow me"
-image: Imagen/foto_home.png
+image: foto_home.png
 toc: false
 about: 
   template: trestles
