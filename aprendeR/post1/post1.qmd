@@ -51,7 +51,7 @@ Cuando pegas la ruta cambia el signo `\` por este `/`
 ```{r}
 library(readxl)
 # luego ejecutas el siguiente comando
-datos<- read_excel("iris.xlsx") # <1>
+datos<- read_excel("Iris.xlsx") # <1>
 
 # observar la estructura de nuetro dataset
 str(datos) # <2>
@@ -64,13 +64,13 @@ str(datos) # <2>
 
 ```{r}
 library(tidyverse)
-datos<- read.csv2("iris.csv", header = TRUE)
+datos<- read.csv2("Iris.csv", header = TRUE)
 ```
 
 ### Datos en extensión .txt
 
 ```{r}
-data <- read.table(file = "iris.txt", header = TRUE)
+data <- read.table(file = "Iris.txt", header = TRUE)
 head(data) # <3> 
 ```
 

@@ -168,7 +168,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#abriendo-bases-de-datos" id="toc-abriendo-bases-de-datos" class="nav-link active" data-scroll-target="#abriendo-bases-de-datos">Abriendo bases de datos</a></li>
   <li><a href="#abriendo-bases-de-datos-con-código" id="toc-abriendo-bases-de-datos-con-código" class="nav-link" data-scroll-target="#abriendo-bases-de-datos-con-código">Abriendo bases de datos con código</a>
   <ul class="collapse">
-  <li><a href="#bases-de-datos-de-excel" id="toc-bases-de-datos-de-excel" class="nav-link" data-scroll-target="#bases-de-datos-de-excel">Bases de datos de Excel</a></li>
+  <li><a href="#datos-de-excel" id="toc-datos-de-excel" class="nav-link" data-scroll-target="#datos-de-excel">Datos de Excel</a></li>
+  <li><a href="#datos-csv" id="toc-datos-csv" class="nav-link" data-scroll-target="#datos-csv">Datos CSV</a></li>
+  <li><a href="#datos-en-extensión-.txt" id="toc-datos-en-extensión-.txt" class="nav-link" data-scroll-target="#datos-en-extensión-.txt">Datos en extensión .txt</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -187,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    <p><em>Bases de datos en formato .csv, .xlsx, .txt</em></p>
+    <p>Bases de datos en formato .csv, .xlsx, .txt</p>
   </div>
 </div>
 
@@ -239,29 +241,88 @@ Nota
 <section id="abriendo-bases-de-datos-con-código" class="level2">
 <h2 class="anchored" data-anchor-id="abriendo-bases-de-datos-con-código">Abriendo bases de datos con código</h2>
 <p>También puedes abrir bases de datos escribiendo el siguiente código en tu script</p>
-<section id="bases-de-datos-de-excel" class="level3">
-<h3 class="anchored" data-anchor-id="bases-de-datos-de-excel">Bases de datos de Excel</h3>
+<section id="datos-de-excel" class="level3">
+<h3 class="anchored" data-anchor-id="datos-de-excel">Datos de Excel</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pegas la ruta de la carpeta en donde esta el archivo </span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-4" class="code-annotation-target"><a href="#annotated-cell-1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"ruta de la carpeta donde esta el archivo"</span>)</span>
-<span id="annotated-cell-1-5"><a href="#annotated-cell-1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-1-6"><a href="#annotated-cell-1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># luego ejecutas el siguiente comando</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-1-7" class="code-annotation-target"><a href="#annotated-cell-1-7" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"iris.xlsx"</span>)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pegas la ruta de la carpeta en donde esta el archivo </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># setwd("ruta de la carpeta donde esta el archivo")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Cuando pegas la ruta cambia el signo <code>\</code> por este <code>/</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># luego ejecutas el siguiente comando</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Iris.xlsx"</span>)</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># observar la estructura de nuetro dataset</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-6" class="code-annotation-target"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-lines="4" data-code-cell="annotated-cell-1" data-code-annotation="1">Cuando pegas la ruta cambia el signo <code>\</code> por este <code>/</code></span>
+<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">Entre paréntesis agregas el nombre de la base de datos</span>
 </dd>
-<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-lines="7" data-code-cell="annotated-cell-1" data-code-annotation="2">entre parentesis agregas el nombre el de la base de datos. También si es un Excel con varias hojas, agregas sheet= N° de la hoja que quieres abrir.</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="6" data-code-annotation="2">Otra opción para observar la estructura es <code>glimpse()</code></span>
 </dd>
 </dl>
 </div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [150 × 6] (S3: tbl_df/tbl/data.frame)
+ $ Species_No  : num [1:150] 1 1 1 1 1 1 1 1 1 1 ...
+ $ Petal_width : num [1:150] 0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Petal_length: num [1:150] 1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Sepal_width : num [1:150] 3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Sepal_length: num [1:150] 5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Species_name: chr [1:150] "Setosa" "Setosa" "Setosa" "Setosa" ...</code></pre>
 </div>
+</div>
+</section>
+<section id="datos-csv" class="level3">
+<h3 class="anchored" data-anchor-id="datos-csv">Datos CSV</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">"Iris.csv"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="datos-en-extensión-.txt" class="level3">
+<h3 class="anchored" data-anchor-id="datos-en-extensión-.txt">Datos en extensión .txt</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-5"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="at">file =</span> <span class="st">"Iris.txt"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-5-2" class="code-annotation-target"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="3">Con este comando puedes observar las 6 primeras filas del dataset</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Species_No Petal_width Petal_length Sepal_width Sepal_length Species_name
+1          1         0,2          1,4         3,5          5,1       Setosa
+2          1         0,2          1,4           3          4,9       Setosa
+3          1         0,2          1,3         3,2          4,7       Setosa
+4          1         0,2          1,5         3,1          4,6       Setosa
+5          1         0,2          1,4         3,6            5       Setosa
+6          1         0,4          1,7         3,9          5,4       Setosa</code></pre>
+</div>
+</div>
+<p>Espero que te haya servido de ayuda estos consejos 😀</p>
 
 
 </section>
