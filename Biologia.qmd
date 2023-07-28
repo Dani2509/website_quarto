@@ -1,6 +1,6 @@
 ---
-title: " **Biología**"
-subtitle: "Divulgación y lecciones" 
+title: "**Aprende sobre Biología**"
+subtitle: "Lecciones, noticias y Divulgación" 
 listing:
   contents: Biologia
   feed: true
@@ -15,6 +15,7 @@ listing:
   filter-ui: true
   fields: [image, date, title, description, categories, author, reading-time]  
 page-layout: full
-title-block-banner: Biologia/forblock1.jpg
-
+title-block-banner: "#edf3f9"
 ---
+
+Biologia/forblock1.jpg

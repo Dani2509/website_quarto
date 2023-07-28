@@ -12,5 +12,6 @@ listing:
   filter-ui: true
   fields: [image, date, title, subtitle, categories, author]  
 page-layout: full
-title-block-banner: aprendeR/forblock2.png
+title-block-banner: "#edf3f9"
 ---
+aprendeR/forblock2.png

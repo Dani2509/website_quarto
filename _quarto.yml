@@ -4,6 +4,7 @@ project:
 website:
   page-navigation: true
   title: "**La Biocolombianita**"
+  favicon: logo.png
   page-footer:
     background: "#F5F7F7"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
@@ -17,6 +18,7 @@ website:
   navbar:
     logo: logo.png
     background: "#6297CD"
+    foreground: "#FFFFFF"
     
     left:
       - href: index.qmd
