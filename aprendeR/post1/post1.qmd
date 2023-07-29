@@ -18,11 +18,11 @@ Antes de empezar con la exploración de los datos. Debemos aprender a leer los d
 
 En el panel del `Enviroment` nos dirigimos a la opción `Import Dataset` y seleccionamos el tipo de archivo, si es un documento `.xlsx, .txt o csv`. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.
 
-![](fig-1.png)
+![](fig-1.jpg)
 
 En esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.
 
-![](fig-2.png)
+![](fig-2.jpg)
 
 ::: callout-note
 ## Nota
