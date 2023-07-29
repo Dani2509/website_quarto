@@ -17,5 +17,3 @@ listing:
 page-layout: full
 title-block-banner: "#edf3f9"
 ---
-
-Biologia/forblock1.jpg
