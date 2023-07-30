@@ -1,0 +1,13 @@
+---
+title: "**Guía para instalar R y Rstudio**"
+description: |
+  Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo
+author:
+  - name: Daniela O. 
+date: 2023-07-29
+categories: [R, Rstudio]
+image: Instalar_R.jpg
+title-block-banner: false
+---
+
+![](Instalar_R.jpg)

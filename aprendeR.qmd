@@ -10,7 +10,7 @@ listing:
   categories: numbered
   sort-ui: false
   filter-ui: true
-  fields: [image, date, title, subtitle, categories, author]  
+  fields: [image, date, title, description, categories, author]  
 page-layout: full
 title-block-banner: "#edf3f9"
 ---
