@@ -11,3 +11,17 @@ title-block-banner: false
 ---
 
 ![](Instalar_R.jpg)
+
+## Instalando R 🚀
+
+Para instalar R en nuestro computador nos dirigimos a la página de *R projects:* <https://www.r-project.org/> . Una vez allí le damos click en **CRAN,** y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.
+
+Luego debemos seleccionar la versión de R para el sistema operativo que esté utilizando, Windows, Mac OS o Linux.
+
+Al hacer clic sobre `Download R for Windows` seremos dirigidos a otra página. Allí haremos clic sobre `install R for the first time` (esta opción sale cuando es la primera vez que lo instalas).
+
+En la siguiente ventana, haremos clic sobre `Download R 4.3.1 for windows` abrimos el archivo y lo ejecutamos en nuestro ordenador.
+
+## Instalando Rstudio 💻
+
+Para instalar Rstudio ingresamos a la página <https://posit.co/download/rstudio-desktop/>.
