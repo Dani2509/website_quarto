@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.353">
@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Daniela O.">
-<meta name="dcterms.date" content="2023-07-29">
 <meta name="description" content="Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo">
 
 <title>La Biocolombianita - Guía para instalar R y Rstudio</title>
@@ -23,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -51,15 +69,15 @@ ul.task-list li input[type="checkbox"] {
   "type": "overlay",
   "limit": 20,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
   }
 }</script>
 
@@ -81,8 +99,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -129,16 +147,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
   <li><a href="#instalando-r" id="toc-instalando-r" class="nav-link active" data-scroll-target="#instalando-r">Instalando R 🚀</a></li>
   <li><a href="#instalando-rstudio" id="toc-instalando-rstudio" class="nav-link" data-scroll-target="#instalando-rstudio">Instalando Rstudio 💻</a></li>
+  <li><a href="#personalizando-el-entorno-de-rstudio" id="toc-personalizando-el-entorno-de-rstudio" class="nav-link" data-scroll-target="#personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</a>
+  <ul class="collapse">
+  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -159,16 +181,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
     <div class="quarto-title-meta-contents">
              <p>Daniela O. </p>
           </div>
   </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 29, 2023</p>
+      <p class="date">29 de julio de 2023</p>
     </div>
   </div>
   
@@ -178,21 +200,63 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><img src="Instalar_R.jpg" class="img-fluid"></p>
-<section id="instalando-r" class="level2">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
+</figure>
+</div>
+<p>R&nbsp;es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
+<section id="instalando-r" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
+<div class="cell column-page quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 40.1%;justify-content: center;">
+<p><img src="CRAN.png" class="img-fluid" width="449"></p>
+</div>
+<div class="cell-output-display quarto-layout-cell" style="flex-basis: 59.9%;justify-content: center;">
+<p><img src="CRAN_mirrors.png" class="img-fluid" width="670"></p>
+</div>
+</div>
+</div>
 <p>Luego debemos seleccionar la versión de R para el sistema operativo que esté utilizando, Windows, Mac OS o Linux.</p>
-<p>Al hacer clic sobre <code>Download R for Windows</code> sremos dirigidos a la página que se reproduce a continuación. Allí haremos clic sobre&nbsp;<code>install R for the first time</code> (esta opción sale cuando es la primera vez que lo instalas).</p>
+<p>Al hacer clic sobre <code>Download R for Windows</code> seremos dirigidos a otra página. Allí haremos clic sobre&nbsp;<code>install R for the first time</code> (esta opción sale cuando es la primera vez que lo instalas).</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="descargar.png" class="img-fluid" width="426"></p>
+</div>
+</div>
 <p>En la siguiente ventana, haremos clic sobre&nbsp;<code>Download R 4.3.1 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
 </section>
 <section id="instalando-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+<p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Rstudio.png" class="img-fluid" width="574"></p>
+</div>
+</div>
+<p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
+</section>
+<section id="personalizando-el-entorno-de-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+<p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo.</p>
+<section id="bibliografía" class="level3">
+
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+<div id="ref-jimenez2019introduccion" class="csl-entry" role="listitem">
+Jiménez, J. U. (2019). <em>Introducci<span>ó</span>n a R y RStudio</em>.
+</div>
+<div id="ref-rafa-2020" class="csl-entry" role="listitem">
+Rafa. (2020, febrero 25). <em>Qué es R y RStudio?</em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
+</div>
+</div></section></div></main> <!-- /main -->
 
 
 
@@ -316,12 +380,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

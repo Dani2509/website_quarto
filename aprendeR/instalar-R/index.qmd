@@ -4,13 +4,18 @@ description: |
   Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo
 author:
   - name: Daniela O. 
+lang: es
 date: 2023-07-29
 categories: [R, Rstudio]
 image: Instalar_R.jpg
 title-block-banner: false
+bibliography: biblio.bib
+csl: apa.csl
+nocite: |
+  @rafa-2020, @jimenez2019introduccion
 ---
 
-![](Instalar_R.jpg){width="643"}
+![](Instalar_R.jpg){fig-align="center" width="605"}
 
 R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas
 
@@ -18,12 +23,41 @@ R es un lenguaje de programación (Open Source) y gratis utilizado para el aná
 
 Para instalar R en nuestro computador nos dirigimos a la página de *R projects:* <https://www.r-project.org/> . Una vez allí le damos click en **CRAN,** y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.
 
+```{r}
+#| eval: true
+#| echo: false
+#| layout-ncol: 2
+#| column: page
+knitr::include_graphics("CRAN.png")
+knitr::include_graphics("CRAN_mirrors.png")
+```
+
 Luego debemos seleccionar la versión de R para el sistema operativo que esté utilizando, Windows, Mac OS o Linux.
 
 Al hacer clic sobre `Download R for Windows` seremos dirigidos a otra página. Allí haremos clic sobre `install R for the first time` (esta opción sale cuando es la primera vez que lo instalas).
+
+```{r}
+#| eval: true
+#| echo: false
+knitr::include_graphics("descargar.png")
+```
 
 En la siguiente ventana, haremos clic sobre `Download R 4.3.1 for windows` abrimos el archivo y lo ejecutamos en nuestro ordenador.
 
 ## Instalando Rstudio 💻
 
-Para instalar Rstudio ingresamos a la página <https://posit.co/download/rstudio-desktop/>.
+Para instalar Rstudio ingresamos a la página <https://posit.co/download/rstudio-desktop/>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.
+
+```{r}
+#| eval: true
+#| echo: false
+knitr::include_graphics("Rstudio.png")
+```
+
+Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.
+
+## Personalizando el entorno de Rstudio 🖌️
+
+Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo.
+
+### Bibliografía
