@@ -10,7 +10,9 @@ image: Instalar_R.jpg
 title-block-banner: false
 ---
 
-![](Instalar_R.jpg)
+![](Instalar_R.jpg){width="643"}
+
+R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas
 
 ## Instalando R 🚀
 
