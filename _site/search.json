@@ -25,7 +25,7 @@
     "href": "aprendeR/instalar-R/index.html#personalizando-el-entorno-de-rstudio",
     "title": "Guía para instalar R y Rstudio",
     "section": "Personalizando el entorno de Rstudio 🖌️",
-    "text": "Personalizando el entorno de Rstudio 🖌️\nCuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo."
+    "text": "Personalizando el entorno de Rstudio 🖌️\nCuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos Tools y Global Options. En Appearance seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en Apply.\n\nEspero que este post te haya ayudado ❤️"
   },
   {
     "objectID": "aprendeR/post1/post1.html",

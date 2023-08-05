@@ -12,7 +12,7 @@ title-block-banner: false
 bibliography: biblio.bib
 csl: apa.csl
 nocite: |
-  @rafa-2020, @jimenez2019introduccion
+  @rafa-2020, @ulises-2019
 ---
 
 ![](Instalar_R.jpg){fig-align="center" width="605"}
