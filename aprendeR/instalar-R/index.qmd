@@ -58,6 +58,10 @@ Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de
 
 ## Personalizando el entorno de Rstudio 🖌️
 
-Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo.
+Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos `Tools` y `Global Options`. En `Appearance` seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en `Apply.`
+
+![](personalización.gif)
+
+Espero que este post te haya ayudado ❤️
 
 ### Bibliografía
