@@ -1,5 +1,6 @@
 ---
-title: "Follow me"
+title: "La biocolombianita"
+subtitle: "Divulgación en Biología & R programming ️️"
 image: foto_home.png
 toc: false
 about: 
