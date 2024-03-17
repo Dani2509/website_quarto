@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 08c6166d-c5d9-4a49-99fc-af18f676ea4c
+      url: 'https://grand-cassata-681208.netlify.app'
