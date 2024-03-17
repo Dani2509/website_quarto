@@ -6,8 +6,8 @@ website:
   title: "**La Biocolombianita**"
   favicon: logo.png
   page-footer:
-    background: "#6297CD"
-    foreground: "#FFFFFF"
+    background: "#f1faee"
+    foreground: "#212529"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right: 
       - icon: twitter
@@ -43,6 +43,9 @@ format:
   html:
     theme: Lumen
     toc: true
+
+execute:
+  freeze: auto
     
 
 

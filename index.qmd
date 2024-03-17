@@ -17,6 +17,8 @@ about:
     - icon: github
       text: GitHub
       href: https://github.com/Dani2509
+execute: 
+  freeze: true
 ---
 
 ## **¡Bienvenidos!**
