@@ -22,14 +22,17 @@ website:
     foreground: "#FFFFFF"
     
     left:
-      - href: index.qmd
-        text: "{{< fa house-user >}} Inicio"
-      - href: Biologia.qmd
-        text: "{{< fa microscope >}} Biología"
-      - href: aprendeR.qmd
-        text: "{{< fa laptop-code >}} Aprende R"
+      - text: Inicio
+        href: index.qmd
+        icon: house-door
+      - text: Biologia
+        href: Biologia.qmd
+        icon: tree
+      - text: Aprende R
+        href: aprendeR.qmd
+        icon: journal-code
     right:
-      - icon: twitter
+      - icon: twitter-x
         href: https://twitter.com/Daniela_Osqui
       - icon: instagram
         href: https://www.instagram.com/labiocolombianita/
