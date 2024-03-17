@@ -4,6 +4,7 @@ project:
 website:
   page-navigation: true
   title: "**La Biocolombianita**"
+  site-url: https://labiocolombianita.netlify.app
   favicon: logo.png
   page-footer:
     background: "#f1faee"
