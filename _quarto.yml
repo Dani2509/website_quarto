@@ -23,11 +23,11 @@ website:
     
     left:
       - href: index.qmd
-        text: Inicio
+        text: "{{< fa house-user >}} Inicio"
       - href: Biologia.qmd
-        text: Biología
+        text: "{{< fa microscope >}} Biología"
       - href: aprendeR.qmd
-        text: Aprende R
+        text: "{{< fa laptop-code >}} Aprende R"
     right:
       - icon: twitter
         href: https://twitter.com/Daniela_Osqui
