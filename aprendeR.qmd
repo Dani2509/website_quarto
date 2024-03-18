@@ -1,6 +1,6 @@
 ---
-title: "**Aprende {{< fa brands r-project >}} programming**"
-subtitle: "SIG | Data science | Estadística" 
+title: "<center>**Aprende {{< fa brands r-project >}} programming**<center>"
+subtitle: "<center>SIG | Data science | Estadística<center>" 
 listing:
   contents: aprendeR
   feed: true
@@ -14,3 +14,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+--------------------------------

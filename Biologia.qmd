@@ -1,6 +1,6 @@
 ---
-title: "Lecciones {{< fa flask-vial >}} avances "
-subtitle: "Explorando los Misterios de la Vida: Un Viaje Fascinante a través de la Biología" 
+title: "<center>Lecciones {{< fa flask-vial >}} avances<center> "
+subtitle: "<center>Explorando los Misterios de la Vida: Un Viaje Fascinante a través de la Biología<center>" 
 listing:
   contents: Biologia
   feed: true
@@ -16,3 +16,5 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+------------------------------------
