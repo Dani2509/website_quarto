@@ -7,7 +7,7 @@ author:
 lang: es
 date: 2023-07-29
 categories: [R, Rstudio]
-image: Instalar_R.jpg
+image: instalar_R.png
 title-block-banner: false
 bibliography: biblio.bib
 csl: apa.csl
