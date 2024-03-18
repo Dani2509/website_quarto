@@ -1,6 +1,6 @@
 ---
-title: "**Aprende R**"
-subtitle: "Lecciones y pruebas estadísticas con R y Rstudio" 
+title: "**Aprende {{< fa brands r-project >}} programming**"
+subtitle: "SIG | Data science | Estadística" 
 listing:
   contents: aprendeR
   feed: true
@@ -9,8 +9,8 @@ listing:
   date-format: medium
   categories: numbered
   sort-ui: false
-  filter-ui: true
+  filter-ui: false
   fields: [image, date, title, description, categories, author]  
 page-layout: full
-title-block-banner: "#edf3f9"
+title-block-banner: false
 ---

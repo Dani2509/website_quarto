@@ -1,19 +1,18 @@
 ---
-title: "**Aprende sobre Biología**"
-subtitle: "Lecciones, noticias y Divulgación" 
+title: "Lecciones {{< fa flask-vial >}} avances "
+subtitle: "Explorando los Misterios de la Vida: Un Viaje Fascinante a través de la Biología" 
 listing:
   contents: Biologia
   feed: true
   sort: "date desc"
-  type: grid
-  grid-item-border: true
-  grid-item-align: left
+  type: default
+  image-align: left
   max-description-length: 175
   date-format: medium
   categories: numbered
   sort-ui: false
-  filter-ui: true
+  filter-ui: false
   fields: [image, date, title, description, categories, author, reading-time]  
 page-layout: full
-title-block-banner: "#edf3f9"
+title-block-banner: false
 ---

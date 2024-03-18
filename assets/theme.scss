@@ -1,5 +1,5 @@
 /*-- scss:defaults --*/
-@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100..600&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100..600&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /*-- Define color for later use --*/
 
@@ -33,6 +33,18 @@ $font-family-monospace:      "Dank Mono", SFMono-Regular, Menlo, Monaco, Consola
 
 $headings-font-family:       "Petrona";
 
+/* page title  */
+#quarto-content .subtitle {
+    padding-top: 10px;
+    font-size: 1.0em;
+}
+
+h1.title, .title.h1 {
+  text-align: left;
+  margin-top: 2em;
+}
+
+
 /*social links*/
 
 
@@ -51,6 +63,28 @@ div.quarto-about-trestles .about-entity .about-links {
 .about-entity .about-link {
     padding: 0.25em 0.25em !important;
     border: none !important;
+}
+
+.navbar {
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #5888b9;
+}
+
+
+div.quarto-post .listing-categories .listing-category {
+    color: #157e97;
+    border: solid 1px #5888b9;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font-size: .65em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 4px;
 }
 
 
