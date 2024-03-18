@@ -1,6 +1,7 @@
 ---
-title: "La biocolombianita"
-subtitle: "Divulgación en Biología & R programming ️️"
+title: "La Biocolombianita"
+subtitle: "Divulgación en Biología & 
+{{< fa brands r-project >}} programming ️️"
 image: foto_home.png
 toc: false
 about: 
@@ -9,13 +10,13 @@ about:
   image-width: 14em
   links:
     - icon: instagram
-      text: Instagram
+      aria-label: Instagram
       href: https://www.instagram.com/labiocolombianita/
     - icon: twitter
-      text: Twitter
+      aria-label: Twitter
       href: https://twitter.com/Daniela_Osqui
     - icon: github
-      text: GitHub
+      aria-label: GitHub
       href: https://github.com/Dani2509
 execute: 
   freeze: true
@@ -25,6 +26,6 @@ execute:
 
 Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog "La Biocolombianita". Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.
 
-> Si una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)
+> *Si una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)* {{< fa feather-pointed >}}
 
 `Para cualquier inquietud escríbeme a: labiocolombianita@gmail.com`

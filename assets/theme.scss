@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100..600&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+/*-- Define color for later use --*/
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$primary: #0096c7;
+
+
+
+// Body
+$body-color:                 $gray-800;
+$body-secondary:             #6C757D;
+
+// Fonts
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:     "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+// $font-family-serif: "Petrona", serif,;
+$headings-font-weight:       400;
+
+$font-family-monospace:      "Dank Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$headings-font-family:       "Petrona";
+
+/*social links*/
+
+
+div.quarto-about-trestles .about-entity .about-links {
+    flex-direction: row;
+    row-gap: 1em;
+    width: 100%;
+    padding-bottom: 1.5em;
+}
+
+div.quarto-about-trestles .about-entity .about-links {
+    display: flex;
+    justify-content: center;
+}
+
+.about-entity .about-link {
+    padding: 0.25em 0.25em !important;
+    border: none !important;
+}
+
+
+

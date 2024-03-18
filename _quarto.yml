@@ -7,7 +7,7 @@ website:
   site-url: https://labiocolombianita.netlify.app
   favicon: logo.png
   page-footer:
-    background: "#f1faee"
+    background: "#e9ecef"
     foreground: "#212529"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right: 
@@ -42,7 +42,9 @@ website:
     cookie-consent: true
 format:
   html:
-    theme: Lumen
+    theme: 
+      - Lumen
+      - assets/theme.scss
     toc: true
 
 execute:
