@@ -10,14 +10,13 @@ about:
   image-width: 14em
   links:
     - icon: instagram
-      aria-label: Instagram
       href: https://www.instagram.com/labiocolombianita/
     - icon: twitter
-      aria-label: Twitter
       href: https://twitter.com/Daniela_Osqui
     - icon: github
-      aria-label: GitHub
       href: https://github.com/Dani2509
+page-layout: full
+
 execute: 
   freeze: true
 ---

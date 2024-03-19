@@ -1,6 +1,8 @@
 /*-- scss:defaults --*/
 @import url('https://fonts.googleapis.com/css2?family=Petrona:wght@100..600&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /*-- Define color for later use --*/
 
 $white:    #fff;
@@ -40,7 +42,6 @@ $headings-font-family:       "Petrona";
 }
 
 h1.title, .title.h1 {
-  text-align: left;
   margin-top: 2em;
 }
 
@@ -49,15 +50,14 @@ h1.title, .title.h1 {
 
 
 div.quarto-about-trestles .about-entity .about-links {
-    flex-direction: row;
     row-gap: 1em;
     width: 100%;
     padding-bottom: 1.5em;
+    flex-direction: row !important;
 }
 
 div.quarto-about-trestles .about-entity .about-links {
     display: flex;
-    justify-content: center;
 }
 
 .about-entity .about-link {
@@ -65,27 +65,33 @@ div.quarto-about-trestles .about-entity .about-links {
     border: none !important;
 }
 
+.about-entity .about-links {
+    justify-content: center !important;
+    column-gap: 0em !important;
+    font-size: 1.2em !important;
+}
+
+  /* about area */
+  .about-entity {
+    margin: 0em 0em 0em 0em;
+  }
+  
+
+
 .navbar {
     border-style: solid;
     border-width: 0 1px 1px 1px;
     border-color: #5888b9;
 }
 
-
-div.quarto-post .listing-categories .listing-category {
-    color: #157e97;
-    border: solid 1px #5888b9;
-    border-radius: 0.25rem;
-    text-transform: uppercase;
-    font-size: .65em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    padding-top: 0.15em;
-    padding-bottom: 0.15em;
-    cursor: pointer;
-    margin-right: 4px;
-    margin-bottom: 4px;
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-family: 'Balsamiq Sans';
+    font-size: 1.2em;
 }
+
+
+
 
 
 
