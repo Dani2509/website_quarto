@@ -5,7 +5,7 @@ description: |
 author:
   - name: Daniela O. 
 lang: es
-date: 2023-07-29
+date: 2024-04-22
 categories: [R, Rstudio]
 image: instalar_R.png
 title-block-banner: false
@@ -15,7 +15,7 @@ nocite: |
   @rafa-2020, @ulises-2019
 ---
 
-![](instalar_R.png){fig-align="center" width="605"}
+![](instalar_R.jpg){fig-align="center" width="605"} \## ¿ Qué es R y Rstudio ?
 
 R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas
 
@@ -28,8 +28,8 @@ Para instalar R en nuestro computador nos dirigimos a la página de *R projects:
 #| echo: false
 #| layout-ncol: 2
 #| column: page
-knitr::include_graphics("CRAN.png")
-knitr::include_graphics("CRAN_mirrors.png")
+knitr::include_graphics("CRAN.jpg")
+knitr::include_graphics("CRAN_mirrors.jpg")
 ```
 
 Luego debemos seleccionar la versión de R para el sistema operativo que esté utilizando, Windows, Mac OS o Linux.
@@ -39,26 +39,36 @@ Al hacer clic sobre `Download R for Windows` seremos dirigidos a otra página. A
 ```{r}
 #| eval: true
 #| echo: false
-knitr::include_graphics("descargar.png")
+knitr::include_graphics("descargar.jpg")
 ```
 
-En la siguiente ventana, haremos clic sobre `Download R 4.3.1 for windows` abrimos el archivo y lo ejecutamos en nuestro ordenador.
+En la siguiente ventana, haremos clic sobre `Download R 4.3.3 for windows` abrimos el archivo y lo ejecutamos en nuestro ordenador.
 
 ## Instalando Rstudio 💻
 
 Para instalar Rstudio ingresamos a la página <https://posit.co/download/rstudio-desktop/>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.
 
-```{r}
-#| eval: true
-#| echo: false
-knitr::include_graphics("Rstudio.png")
-```
+![Instalar Rstudio](rstudio.jpg){fig-align="center"}
 
 Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.
 
 ## Personalizando el entorno de Rstudio 🖌️
 
 Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos `Tools` y `Global Options`. En `Appearance` seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en `Apply.`
+
+![Personalizando el entorno de Rstudio](personalizar.jpg){fig-align="center"}
+
+## Personalizando: `library (rsthemes)`
+
+Puedes ampliar el abanico de temas mediante la `library(rsthemes)`. Para hacerlo instala el paquete de la siguiente manera:
+
+``` Consola
+# instalando paquete 
+install.packages("devtools")
+devtools::install_github("gadenbuie/rsthemes")
+
+rsthemes::install_rsthemes(include_base16 = TRUE)
+```
 
 Espero que este post te haya ayudado ❤️
 
