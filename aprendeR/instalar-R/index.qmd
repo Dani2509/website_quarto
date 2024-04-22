@@ -7,7 +7,7 @@ author:
 lang: es
 date: 2024-04-22
 categories: [R, Rstudio]
-image: instalar_R.png
+image: instalar_R.jpg
 title-block-banner: false
 bibliography: biblio.bib
 csl: apa.csl
@@ -15,7 +15,9 @@ nocite: |
   @rafa-2020, @ulises-2019
 ---
 
-![](instalar_R.jpg){fig-align="center" width="605"} \## ¿ Qué es R y Rstudio ?
+![](instalar_R.jpg){fig-align="center" width="605"}
+
+## ¿ Qué es R y Rstudio ?
 
 R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas
 

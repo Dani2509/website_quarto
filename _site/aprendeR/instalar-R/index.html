@@ -51,7 +51,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../logo.png" rel="icon" type="image/png">
+<link href="../../logo.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -93,7 +93,7 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../logo.png" alt="" class="navbar-logo">
+    <img src="../../logo.ico" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
@@ -153,9 +153,11 @@ div.csl-indent {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#instalando-r" id="toc-instalando-r" class="nav-link active" data-scroll-target="#instalando-r">Instalando R 🚀</a></li>
+  <li><a href="#qué-es-r-y-rstudio" id="toc-qué-es-r-y-rstudio" class="nav-link active" data-scroll-target="#qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</a></li>
+  <li><a href="#instalando-r" id="toc-instalando-r" class="nav-link" data-scroll-target="#instalando-r">Instalando R 🚀</a></li>
   <li><a href="#instalando-rstudio" id="toc-instalando-rstudio" class="nav-link" data-scroll-target="#instalando-rstudio">Instalando Rstudio 💻</a></li>
-  <li><a href="#personalizando-el-entorno-de-rstudio" id="toc-personalizando-el-entorno-de-rstudio" class="nav-link" data-scroll-target="#personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</a>
+  <li><a href="#personalizando-el-entorno-de-rstudio" id="toc-personalizando-el-entorno-de-rstudio" class="nav-link" data-scroll-target="#personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</a></li>
+  <li><a href="#personalizando-library-rsthemes" id="toc-personalizando-library-rsthemes" class="nav-link" data-scroll-target="#personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></a>
   <ul class="collapse">
   <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
   </ul></li>
@@ -193,7 +195,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">29 de julio de 2023</p>
+      <p class="date">22 de abril de 2024</p>
     </div>
   </div>
   
@@ -205,20 +207,23 @@ div.csl-indent {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="instalar_R.png" class="img-fluid figure-img" width="605"></p>
+<p><img src="instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
 </figure>
 </div>
+<section id="qué-es-r-y-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
+</section>
 <section id="instalando-r" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
 <div class="cell column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="CRAN.png" class="img-fluid"></p>
+<p><img src="CRAN.jpg" class="img-fluid"></p>
 </div>
 <div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="CRAN_mirrors.png" class="img-fluid"></p>
+<p><img src="CRAN_mirrors.jpg" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -226,24 +231,40 @@ div.csl-indent {
 <p>Al hacer clic sobre <code>Download R for Windows</code> seremos dirigidos a otra página. Allí haremos clic sobre <code>install R for the first time</code> (esta opción sale cuando es la primera vez que lo instalas).</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="descargar.png" class="img-fluid"></p>
+<p><img src="descargar.jpg" class="img-fluid"></p>
 </div>
 </div>
-<p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.1 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
+<p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
 </section>
 <section id="instalando-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="Rstudio.png" class="img-fluid"></p>
-</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Instalar Rstudio</figcaption>
+</figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
 </section>
 <section id="personalizando-el-entorno-de-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption>
+</figure>
+</div>
+</section>
+<section id="personalizando-library-rsthemes" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
+<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+<pre class="consola"><code># instalando paquete 
+install.packages("devtools")
+devtools::install_github("gadenbuie/rsthemes")
+
+rsthemes::install_rsthemes(include_base16 = TRUE)</code></pre>
 <p>Espero que este post te haya ayudado ❤️</p>
 <section id="bibliografía" class="level3">
 

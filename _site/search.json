@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "aprendeR.html",
+    "href": "aprendeR.html",
+    "title": "\nAprende  programming\n",
+    "section": "",
+    "text": "Guía para instalar R y Rstudio\n\n\n\n\n\n\n\nR\n\n\nRstudio\n\n\n\n\nAprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo\n\n\n\n\n\n\nApr 22, 2024\n\n\nDaniela O.\n\n\n\n\n\n\n  \n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\n\n\n\n\nTips\n\n\nbases de datos\n\n\n\n\nBases de datos en formato .csv, .xlsx, .txt\n\n\n\n\n\n\nJun 10, 2023\n\n\nDaniela O.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html",
+    "href": "aprendeR/instalar-R/index.html",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "",
+    "text": "## ¿ Qué es R y Rstudio ?\nR es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas"
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html#instalando-r",
+    "href": "aprendeR/instalar-R/index.html#instalando-r",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "Instalando R 🚀",
+    "text": "Instalando R 🚀\nPara instalar R en nuestro computador nos dirigimos a la página de R projects: https://www.r-project.org/ . Una vez allí le damos click en CRAN, y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.\n\n\n\n\n\n\n\n\n\n\nLuego debemos seleccionar la versión de R para el sistema operativo que esté utilizando, Windows, Mac OS o Linux.\nAl hacer clic sobre Download R for Windows seremos dirigidos a otra página. Allí haremos clic sobre install R for the first time (esta opción sale cuando es la primera vez que lo instalas).\n\n\n\n\n\nEn la siguiente ventana, haremos clic sobre Download R 4.3.3 for windows abrimos el archivo y lo ejecutamos en nuestro ordenador."
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html#instalando-rstudio",
+    "href": "aprendeR/instalar-R/index.html#instalando-rstudio",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "Instalando Rstudio 💻",
+    "text": "Instalando Rstudio 💻\nPara instalar Rstudio ingresamos a la página https://posit.co/download/rstudio-desktop/. Seguimos y ejecutamos todos los pasos que nos indica el archivo.\n\n\n\nInstalar Rstudio\n\n\nFelicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo."
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html#personalizando-el-entorno-de-rstudio",
+    "href": "aprendeR/instalar-R/index.html#personalizando-el-entorno-de-rstudio",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "Personalizando el entorno de Rstudio 🖌️",
+    "text": "Personalizando el entorno de Rstudio 🖌️\nCuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos Tools y Global Options. En Appearance seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en Apply.\n\n\n\nPersonalizando el entorno de Rstudio"
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html#personalizando-library-rsthemes",
+    "href": "aprendeR/instalar-R/index.html#personalizando-library-rsthemes",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "Personalizando: library (rsthemes)",
+    "text": "Personalizando: library (rsthemes)\nPuedes ampliar el abanico de temas mediante la library(rsthemes). Para hacerlo instala el paquete de la siguiente manera:\n# instalando paquete \ninstall.packages(\"devtools\")\ndevtools::install_github(\"gadenbuie/rsthemes\")\n\nrsthemes::install_rsthemes(include_base16 = TRUE)\nEspero que este post te haya ayudado ❤️"
+  },
+  {
+    "objectID": "Biologia.html",
+    "href": "Biologia.html",
+    "title": "\nLecciones  avances\n",
+    "section": "",
+    "text": "La ciencia basada en hechos observables\n\n\n\n\n\n\n\nCiencia\n\n\nArticulos\n\n\n\n\nDebemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos\n\n\n\n\n\n\nJun 10, 2023\n\n\nDaniela O.\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Biologia/2023-06-10-ciencia/index.html",
+    "href": "Biologia/2023-06-10-ciencia/index.html",
+    "title": "La ciencia basada en hechos observables",
+    "section": "",
+    "text": "La vista siempre ha jugado un papel fundamental al momento de hacer ciencia, pero también es cierto que debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos. Dos personas podrían estar mirando el mismo fenómeno, pero ser procesado de formas diferentes por cada individuo de acuerdo con sus experiencias previas y su manera de pensar. Por eso la colaboración científica y el trabajo en equipo se torna tan importante a la hora de generar conocimiento. Hay muchos factores que influyen al momento de hacer una observación puesto que lo que ve un observador resulta afectado por su conocimiento y experiencia, de ahí que la ciencia se deriva de los hechos observables, de las cosas que podemos ver, oír y tocar, mas no en la imaginación especulativa. De esta idea surge dos escuelas filosóficas que formalizan este pensamiento, los empiristas1 y positivistas2. Para el empirismo la experiencia es la base de todo conocimiento, no solo en cuanto a su origen sino también en cuanto a su contenido. Se parte del mundo sensible para formar los conceptos y su justificación. Los positivistas también creen que el conocimiento se deriva exclusivamente de la experiencia de los fenómenos naturales difiriendo con los empiristas en que el conocimiento auténtico es conocimiento científico. Sin embargo, este aspecto está implícito en la constatación de que uno tiene que aprender para llegar a ser competente en ciencia.\nA pesar de esto uno como persona debe estar abierto a nuevos conocimientos, debe estar dispuesto a observar, más que a ver, porque cuando vemos no significa que analicemos lo que hay en nuestro alrededor, pasamos por alto cosas que creemos indispensables pero que pueden marcar la diferencia. Por consiguiente, la ciencia basada en los hechos solo puede ser verificada gracias al intercambio de información.\nBibliografía"
+  },
+  {
+    "objectID": "Biologia/2023-06-10-ciencia/index.html#footnotes",
+    "href": "Biologia/2023-06-10-ciencia/index.html#footnotes",
+    "title": "La ciencia basada en hechos observables",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nEl empirismo es una doctrina filosófica y epistemológica que alude que todo conocimiento que posee o adquiere el hombre es producto de la experiencia↩︎\nAfirma que el único conocimiento auténtico es el conocimiento científico↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "La Biocolombianita",
+    "section": "",
+    "text": "Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.\n\nSi una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci) \n\nPara cualquier inquietud escríbeme a: labiocolombianita@gmail.com"
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "La Biocolombianita",
+    "section": "",
+    "text": "Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.\n\nSi una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci) \n\nPara cualquier inquietud escríbeme a: labiocolombianita@gmail.com"
+  },
+  {
+    "objectID": "aprendeR/instalar-R/index.html#qué-es-r-y-rstudio",
+    "href": "aprendeR/instalar-R/index.html#qué-es-r-y-rstudio",
+    "title": "Guía para instalar R y Rstudio",
+    "section": "¿ Qué es R y Rstudio ?",
+    "text": "¿ Qué es R y Rstudio ?\nR es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas"
+  }
+]

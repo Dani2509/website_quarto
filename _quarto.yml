@@ -5,7 +5,7 @@ website:
   page-navigation: true
   title: "**La Biocolombianita**"
   site-url: https://labiocolombianita.netlify.app
-  favicon: logo.png
+  favicon: logo.ico
   page-footer:
     background: "#f8f9fa"
     foreground: "#212529"
@@ -18,7 +18,7 @@ website:
       - icon: github
         href: https://github.com/Dani2509
   navbar:
-    logo: logo.png
+    logo: logo.ico
     background: "#6297CD"
     foreground: "#FFFFFF"
     
@@ -49,6 +49,8 @@ format:
 
 execute:
   freeze: auto
+  warning: false
+  message: false
     
 
 
