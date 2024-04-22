@@ -5,6 +5,7 @@ website:
   page-navigation: true
   title: "**La Biocolombianita**"
   site-url: https://labiocolombianita.netlify.app
+  open-graph: true
   favicon: logo.ico
   page-footer:
     background: "#f8f9fa"
