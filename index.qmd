@@ -1,8 +1,7 @@
 ---
 title: "La Biocolombianita"
 subtitle: "Divulgación en Biología & 
-{{< fa brands r-project >}} programming ️️"
-image: foto_home.jpeg
+{{< fa brands r-project >}} programming" image: foto_home.jpeg
 toc: false
 about: 
   template: trestles
