@@ -24,13 +24,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./logo.ico" rel="icon">
+<link href="./media/logo.ico" rel="icon">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,10 +63,27 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+<style>html{ scroll-behavior: smooth; }</style>
+
 
 <meta property="og:title" content="La Biocolombianita - La Biocolombianita">
 <meta property="og:description" content="Divulgación en Biología &amp;  programming">
-<meta property="og:image" content="https://labiocolombianita.netlify.app/foto_home.jpeg">
+<meta property="og:image" content="https://labiocolombianita.netlify.app/media/foto_home.jpg">
 <meta property="og:site-name" content="**La Biocolombianita**">
 </head>
 
@@ -77,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo.ico" alt="" class="navbar-logo">
+    <img src="./media/logo.ico" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
@@ -107,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/Daniela_Osqui" rel="" target=""><i class="bi bi-twitter-x" role="img">
+    <a class="nav-link" href="https://twitter.com/Daniela_Osqui" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -136,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <div class="quarto-about-trestles column-page">
   <div class="about-entity">
-    <img src="foto_home.jpeg" class="about-image
+    <img src="/media/foto_home.jpg" class="about-image
   round " style="height: 14em; width: 14em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -399,15 +417,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/labiocolombianita\.netlify\.app");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">Blog made with 💜 and <a href="https://quarto.org/">Quarto</a>, by Daniela O. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Change cookies 🍪</a></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
@@ -435,4 +465,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

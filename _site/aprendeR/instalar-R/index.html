@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.3.450">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
 <meta name="author" content="Daniela O.">
 <meta name="description" content="Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo">
-
 <title>La Biocolombianita - Guía para instalar R y Rstudio</title>
 <style>
 code{white-space: pre-wrap;}
@@ -43,15 +40,15 @@ div.csl-indent {
   margin-left: 2em;
 }</style>
 
-
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../logo.ico" rel="icon">
+<link href="../../media/logo.ico" rel="icon">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,8 +57,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -80,25 +76,32 @@ div.csl-indent {
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
   }
-}</script>
-
-
+}</script><script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script><style>html{ scroll-behavior: smooth; }</style>
 <meta property="og:title" content="La Biocolombianita - Guía para instalar R y Rstudio">
 <meta property="og:description" content="Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo">
 <meta property="og:image" content="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalar_R.jpg">
 <meta property="og:site-name" content="**La Biocolombianita**">
 </head>
-
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../logo.ico" alt="" class="navbar-logo">
-    </a>
+    <img src="../../media/logo.ico" alt="" class="navbar-logo"></a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
     </a>
@@ -109,7 +112,7 @@ div.csl-indent {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
+<li class="nav-item">
     <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
 </i> 
  <span class="menu-text">Inicio</span></a>
@@ -125,9 +128,9 @@ div.csl-indent {
  <span class="menu-text">Aprende R</span></a>
   </li>  
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/Daniela_Osqui" rel="" target=""><i class="bi bi-twitter-x" role="img">
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/Daniela_Osqui" rel="" target=""><i class="bi bi-twitter" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -142,37 +145,31 @@ div.csl-indent {
  <span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
+<div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">En esta página</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#qué-es-r-y-rstudio" id="toc-qué-es-r-y-rstudio" class="nav-link active" data-scroll-target="#qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</a></li>
+<li><a href="#qu%C3%A9-es-r-y-rstudio" id="toc-qué-es-r-y-rstudio" class="nav-link active" data-scroll-target="#qu%C3%A9-es-r-y-rstudio">¿ Qué es R y Rstudio ?</a></li>
   <li><a href="#instalando-r" id="toc-instalando-r" class="nav-link" data-scroll-target="#instalando-r">Instalando R 🚀</a></li>
   <li><a href="#instalando-rstudio" id="toc-instalando-rstudio" class="nav-link" data-scroll-target="#instalando-rstudio">Instalando Rstudio 💻</a></li>
   <li><a href="#personalizando-el-entorno-de-rstudio" id="toc-personalizando-el-entorno-de-rstudio" class="nav-link" data-scroll-target="#personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</a></li>
-  <li><a href="#personalizando-library-rsthemes" id="toc-personalizando-library-rsthemes" class="nav-link" data-scroll-target="#personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></a>
+  <li>
+<a href="#personalizando-library-rsthemes" id="toc-personalizando-library-rsthemes" class="nav-link" data-scroll-target="#personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></a>
   <ul class="collapse">
-  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
-  </ul></li>
+<li><a href="#bibliograf%C3%ADa" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliograf%C3%ADa">Bibliografía</a></li>
   </ul>
-</nav>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
+<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title"><strong>Guía para instalar R y Rstudio</strong></h1>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
@@ -207,19 +204,13 @@ div.csl-indent {
   </div>
   
 
-</header>
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
+</header><div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
 </figure>
 </div>
-<section id="qué-es-r-y-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
+<section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
-</section>
-<section id="instalando-r" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
+</section><section id="instalando-r" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
 <div class="cell column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -239,31 +230,22 @@ div.csl-indent {
 </div>
 </div>
 <p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
-</section>
-<section id="instalando-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+</section><section id="instalando-rstudio" class="level2"><h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="rstudio.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Instalar Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Instalar Rstudio</figcaption></figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
-</section>
-<section id="personalizando-el-entorno-de-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+</section><section id="personalizando-el-entorno-de-rstudio" class="level2"><h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="personalizar.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption></figure>
 </div>
-</section>
-<section id="personalizando-library-rsthemes" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
-<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+</section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
+</h2>
+<p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
 <pre class="consola"><code># instalando paquete 
 install.packages("devtools")
 devtools::install_github("gadenbuie/rsthemes")
@@ -274,29 +256,17 @@ rsthemes::install_rsthemes(include_base16 = TRUE)</code></pre>
 
 
 
-
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
 <div id="ref-rafa-2020" class="csl-entry" role="listitem">
 Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
 </div>
 <div id="ref-ulises-2019" class="csl-entry" role="listitem">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section></div></main> <!-- /main -->
-
-
-
-
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-
-
-
+</div></section></div></main><!-- /main --><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style type="text/css">
 #share-container span {
@@ -351,11 +321,7 @@ const linkedIn = document.querySelector('.linkedin');
 linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
 const telegram = document.querySelector('.telegram');
 telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
-</script>
-  
-
-
-<script id="quarto-html-after-body" type="application/javascript">
+</script><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -586,20 +552,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("https:\/\/labiocolombianita\.netlify\.app");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
-</script>
-<script src="https://giscus.app/client.js" data-repo="dani2509/website_quarto" data-repo-id="R_kgDOJwDitA" data-category="General" data-category-id="DIC_kwDOJwDitM4CX-HZ" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
+</script><script src="https://giscus.app/client.js" data-repo="dani2509/website_quarto" data-repo-id="R_kgDOJwDitA" data-category="General" data-category-id="DIC_kwDOJwDitM4CX-HZ" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
+<footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">Blog made with 💜 and <a href="https://quarto.org/">Quarto</a>, by Daniela O. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
+    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Change cookies 🍪</a></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
+<li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/Daniela_Osqui">
       <i class="bi bi-twitter" role="img">
 </i> 
@@ -618,10 +594,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
 </ul>
-    </div>
+</div>
   </div>
 </footer>
+</div>
 
 
-
-</div></body></html>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -15,21 +15,13 @@
   <title>Guía para instalar R y Rstudio</title>
   <dc:creator>Daniela O.</dc:creator>
   <link>https://labiocolombianita.netlify.app/aprendeR/instalar-R/index.html</link>
-  <description><![CDATA[ 
-
-
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
+  <description><![CDATA[ <div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
 </figure>
 </div>
-<section id="qué-es-r-y-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
+<section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
-</section>
-<section id="instalando-r" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
+</section><section id="instalando-r" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
 <div class="cell column-page quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -49,31 +41,22 @@
 </div>
 </div>
 <p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
-</section>
-<section id="instalando-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+</section><section id="instalando-rstudio" class="level2"><h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Instalar Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Instalar Rstudio</figcaption></figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
-</section>
-<section id="personalizando-el-entorno-de-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+</section><section id="personalizando-el-entorno-de-rstudio" class="level2"><h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption></figure>
 </div>
-</section>
-<section id="personalizando-library-rsthemes" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
-<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+</section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
+</h2>
+<p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
 <pre class="consola"><code># instalando paquete 
 install.packages("devtools")
 devtools::install_github("gadenbuie/rsthemes")
@@ -84,11 +67,7 @@ rsthemes::install_rsthemes(include_base16 = TRUE)</code></pre>
 
 
 
-
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2">
+</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2">
 <div id="ref-rafa-2020" class="csl-entry">
 Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
 </div>
@@ -175,11 +154,11 @@ font-style: inherit;">str</span>(datos)</span><div class="code-annotation-gutter
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">Entre paréntesis agregas el nombre de la base de datos</span>
+<span data-code-cell="annotated-cell-2" data-code-annotation="1" data-code-lines="3">Entre paréntesis agregas el nombre de la base de datos</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-2" data-code-lines="6" data-code-annotation="2">Otra opción para observar la estructura es <code>glimpse()</code></span>
+<span data-code-cell="annotated-cell-2" data-code-annotation="2" data-code-lines="6">Otra opción para observar la estructura es <code>glimpse()</code></span>
 </dd>
 </dl>
 </div>
@@ -248,7 +227,7 @@ font-style: inherit;">head</span>(data)</span><div class="code-annotation-gutter
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="2" data-code-annotation="3">Con este comando puedes observar las 6 primeras filas del dataset</span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="3" data-code-lines="2">Con este comando puedes observar las 6 primeras filas del dataset</span>
 </dd>
 </dl>
 </div>
