@@ -13,7 +13,9 @@ toc: true
 # Include something after every blog post with hand-made html-file
 format:
   html:
-    include-after-body: ../body_footer.html
+    include-after-body:
+      - ../body_footer.html
+      - ../kofi.html
 
 comments:
   giscus:

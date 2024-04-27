@@ -89,7 +89,35 @@ div.quarto-about-trestles .about-entity .about-links {
     font-size: 1.2em;
 }
 
-/* @import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css); */
+a.kofi-button {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    line-height: 36px !important;
+    min-width: 150px;
+    margin-top: 25px;
+    display: inline-block !important;
+    padding: 1px 12px !important;
+    text-align: center !important;
+    border-radius: 1110px !important;
+    color: #fff;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    border: 0 none #fff !important;
+    font-family: 'Quicksand', Helvetica, Century Gothic, sans-serif !important;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+#share-container span {
+    display: block;
+    margin: .5rem auto;
+    font-size: 16px;
+    padding: 1px 12px;
+    line-height: 13px;
+}
+
 
 
 
