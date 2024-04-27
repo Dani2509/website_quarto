@@ -15,7 +15,7 @@ nocite: |
   @rafa-2020, @ulises-2019
 ---
 
-![](instalar_R.jpg){fig-align="center" width="605"}
+![](instalar_R.jpg){fig-align="center"}
 
 ## ¿ Qué es R y Rstudio ?
 
@@ -64,7 +64,7 @@ Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier prog
 
 Puedes ampliar el abanico de temas mediante la `library(rsthemes)`. Para hacerlo instala el paquete de la siguiente manera:
 
-``` Consola
+``` consola
 # instalando paquete 
 install.packages("devtools")
 devtools::install_github("gadenbuie/rsthemes")
