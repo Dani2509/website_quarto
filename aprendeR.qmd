@@ -5,7 +5,7 @@ listing:
   contents: aprendeR
   feed: true
   sort: "date desc"
-  type: default 
+  type: grid
   date-format: medium
   categories: numbered
   sort-ui: false

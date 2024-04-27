@@ -64,7 +64,7 @@ Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier prog
 
 Puedes ampliar el abanico de temas mediante la `library(rsthemes)`. Para hacerlo instala el paquete de la siguiente manera:
 
-``` consola
+```{.bash filename="Consola"}
 # instalando paquete 
 install.packages("devtools")
 devtools::install_github("gadenbuie/rsthemes")

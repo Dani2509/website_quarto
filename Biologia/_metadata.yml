@@ -5,10 +5,13 @@
 # freeze: true
 
 # Enable banner style title blocks
-title-block-banner: true
+title-block-banner: false
+
+# default author and citation
+citation: true
 
 # no table of contents
-toc: false
+toc: true
 
 # Include something after every blog post with hand-made html-file
 format:
