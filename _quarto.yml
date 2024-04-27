@@ -5,7 +5,6 @@ website:
   page-navigation: true
   title: "**La Biocolombianita**"
   site-url: https://labiocolombianita.netlify.app
-  open-graph: true
   favicon: media/logo.ico
   cookie-consent:
     type: express
