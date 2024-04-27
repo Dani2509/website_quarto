@@ -51,6 +51,7 @@ format:
     theme: 
       - Lumen
       - assets/theme.scss
+      - styles.css
     toc: true
     smooth-scroll: true
     link-external-newwindow: true
