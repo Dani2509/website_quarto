@@ -6,7 +6,7 @@ author:
   - name: Daniela O. 
 date: 2023-06-10
 categories: [Ciencia, Articulos]
-image: portada1.jpg
+image: think.jpg
 title-block-banner: false
 ---
 
