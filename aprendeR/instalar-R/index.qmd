@@ -7,7 +7,7 @@ author:
 lang: es
 date: 2024-04-22
 categories: [R, Rstudio]
-image: instalar_R.jpg
+image: "instalarr.jpg"
 title-block-banner: false
 bibliography: biblio.bib
 csl: apa.csl
@@ -15,7 +15,7 @@ nocite: |
   @rafa-2020, @ulises-2019
 ---
 
-![](instalar_R.jpg){fig-align="center"}
+![](instalarr.jpg){fig-align="center"}
 
 ## ¿ Qué es R y Rstudio ?
 
