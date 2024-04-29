@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -201,7 +235,7 @@ cookieconsent.run({
   
 
 </header><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
+<figure class="figure"><p><img src="instalarr.jpg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
@@ -242,11 +276,16 @@ cookieconsent.run({
 </section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
 </h2>
 <p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
-<pre class="consola"><code># instalando paquete 
-install.packages("devtools")
-devtools::install_github("gadenbuie/rsthemes")
-
-rsthemes::install_rsthemes(include_base16 = TRUE)</code></pre>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Consola</strong></pre>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># instalando paquete </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"devtools"</span><span class="kw">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">devtools::install_github</span><span class="er">(</span><span class="st">"gadenbuie/rsthemes"</span><span class="kw">)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">rsthemes::install_rsthemes</span><span class="er">(</span><span class="ex">include_base16</span> = TRUE<span class="kw">)</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>Espero que este post te haya ayudado ❤️</p>
 <section id="bibliografía" class="level3">
 
@@ -259,7 +298,16 @@ Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzal
 <div id="ref-ulises-2019" class="csl-entry" role="listitem">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section></div></main><!-- /main --><meta charset="UTF-8">
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+  author = {O., Daniela},
+  title = {**Guía para instalar R y Rstudio**},
+  date = {2024-04-22},
+  url = {https://labiocolombianita.netlify.app/aprendeR/instalar-R},
+  langid = {es}
+}
+</code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-R">https://labiocolombianita.netlify.app/aprendeR/instalar-R</a>
+</div></div></section></div></main><!-- /main --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>

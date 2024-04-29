@@ -60,7 +60,7 @@
     "href": "aprendeR/instalar-R/index.html#personalizando-library-rsthemes",
     "title": "Guía para instalar R y Rstudio",
     "section": "Personalizando: library (rsthemes)\n",
-    "text": "Personalizando: library (rsthemes)\n\nPuedes ampliar el abanico de temas mediante la library(rsthemes). Para hacerlo instala el paquete de la siguiente manera:\n# instalando paquete \ninstall.packages(\"devtools\")\ndevtools::install_github(\"gadenbuie/rsthemes\")\n\nrsthemes::install_rsthemes(include_base16 = TRUE)\nEspero que este post te haya ayudado ❤️"
+    "text": "Personalizando: library (rsthemes)\n\nPuedes ampliar el abanico de temas mediante la library(rsthemes). Para hacerlo instala el paquete de la siguiente manera:\n\n\nConsola\n\n# instalando paquete \ninstall.packages(\"devtools\")\ndevtools::install_github(\"gadenbuie/rsthemes\")\n\nrsthemes::install_rsthemes(include_base16 = TRUE)\n\nEspero que este post te haya ayudado ❤️"
   },
   {
     "objectID": "aprendeR/post1/post1.html",

@@ -16,7 +16,7 @@
   <dc:creator>Daniela O.</dc:creator>
   <link>https://labiocolombianita.netlify.app/aprendeR/instalar-R/index.html</link>
   <description><![CDATA[ <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalar_R.jpg" class="img-fluid figure-img" width="605"></p>
+<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
@@ -57,11 +57,42 @@
 </section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
 </h2>
 <p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
-<pre class="consola"><code># instalando paquete 
-install.packages("devtools")
-devtools::install_github("gadenbuie/rsthemes")
-
-rsthemes::install_rsthemes(include_base16 = TRUE)</code></pre>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Consola</strong></pre>
+</div>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># instalando paquete </span></span>
+<span id="cb1-2"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">install.packages</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"devtools"</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb1-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">devtools::install_github</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"gadenbuie/rsthemes"</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">rsthemes::install_rsthemes</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">include_base16</span> = TRUE<span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
 <p>Espero que este post te haya ayudado ❤️</p>
 <section id="bibliografía" class="level3">
 
@@ -74,12 +105,21 @@ Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzal
 <div id="ref-ulises-2019" class="csl-entry">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section></div> ]]></description>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+  author = {O., Daniela},
+  title = {**Guía para instalar R y Rstudio**},
+  date = {2024-04-22},
+  url = {https://labiocolombianita.netlify.app/aprendeR/instalar-R},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-R">https://labiocolombianita.netlify.app/aprendeR/instalar-R</a>
+</div></div></section></div> ]]></description>
   <category>R</category>
   <category>Rstudio</category>
   <guid>https://labiocolombianita.netlify.app/aprendeR/instalar-R/index.html</guid>
   <pubDate>Mon, 22 Apr 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalar_R.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>¿Cómo abrir bases de datos en R y observar su estructura?</title>
