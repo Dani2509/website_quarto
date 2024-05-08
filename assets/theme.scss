@@ -28,7 +28,7 @@ $body-secondary:             #6C757D;
 // stylelint-disable-next-line value-keyword-case
 $font-family-sans-serif:     "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 // $font-family-serif: "Petrona", serif,;
-$headings-font-weight:       400;
+$headings-font-weight:       600;
 
 $font-family-monospace:      "Dank Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
@@ -119,6 +119,23 @@ a.kofi-button {
 }
 
 
+element.style {
+    padding-top: 130px !important;
+}
 
+@media (max-width: 991.98px) {
+    #quarto-content>* {
+        padding-top: 35px !important;
+    }
+}
+
+#title-block-header.quarto-title-block.default .quarto-title .title {
+    font-size: 2.0em;
+    margin: 0 0 -0.5em 0;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
+    color: #eff5fb !important;
+}
 
 

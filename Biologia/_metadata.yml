@@ -19,7 +19,5 @@ format:
     include-after-body: 
       - ../body_footer.html
       - ../kofi.html
+      - ../comments.html
 
-comments:
-  giscus:
-    repo: dani2509/website_quarto
