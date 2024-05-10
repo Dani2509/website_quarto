@@ -13,19 +13,19 @@ listing:
    sort: "date desc"
    sort-ui: false
    filter-ui: false
-   page-size: 3
    max-description-length: 70
+   image-height: "300"
  - id: AprendeR
    contents: aprendeR/**/*/index.qmd
    type: grid
    max-items: 3
    grid-columns: 3
+   image-height: "300"
    max-description-length: 70
    fields: [image, date, title, description]
    sort: "date desc"
    sort-ui: false
    filter-ui: false
-   page-size: 3
 about: 
   id: hero-heading
   template: trestles
