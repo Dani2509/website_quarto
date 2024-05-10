@@ -20,20 +20,24 @@
 
 
 
-<p>¿cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el <strong>método científico</strong>, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la <strong>observación</strong> de un fenómeno.</p>
-<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/ilustration_m.jpg" class="img-fluid" style="float: left;" width="250"></p>
+<p>¿Cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el <strong>método científico</strong>, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la <strong>observación</strong> de un fenómeno.</p>
+<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/ilustration_m.jpg" class="img-fluid" style="float: right;" width="250"></p>
 <p>Dicha observación te conduce a una <strong>pregunta</strong> en el que busca establecer la razón de dicho fenómeno. Luego de esto, se fórmula una hipótesis. Una <strong>hipótesis</strong>, es una suposición que se ofrece como una posible explicación a la pregunta. Para que sea útil, la hipótesis debe llevar a una <strong>predicción</strong>, expresada por lo regular en un enunciado condicional: <em>“si… entonces…”</em>. La predicción se somete a prueba mediante experimentos controlados. Los <strong>experimentos</strong> producen resultados que sostienen o refutan la hipótesis, con lo que el investigador puede llegar a una conclusión sobre la validez de ésta. Un experimento único nunca es una base suficiente para llegar a una conclusión; el mismo investigador y otros deben poder repetir los resultados y obtener las mismas conclusiones, siempre y cuando se realicen bajo los mismos parámetros y con las mismas variables.</p>
 <p>Los experimentos ponen a prueba la afirmación de que un factor único (una variable) es la causa de una observación en particular. Para ser válido desde el punto de vista científico, el experimento debe descartar otras posibles variables como la causa de la observación. Por eso, los biólogos incluyen controles en sus experimentos. Las situaciones de control, en las que todas las variables que no se prueban se mantienen constantes, se comparan con la situación experimental.</p>
-<div class="quarto-figure quarto-figure-left">
+<div style="text-align:center;">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/pasos.jpg" class="img-fluid figure-img" width="419"></p>
-<figcaption>Etapas del método científico</figcaption>
+<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/pasos.jpg" class="img-fluid figure-img"></p>
+<figcaption>Etapas del método científico. Creación propia</figcaption>
 </figure>
 </div>
+</div>
+<p>El método científico es potente, pero es importante entender sus limitaciones. En particular, los científicos casi nunca están seguros de haber controlado todas las posibles variables o de haber hecho todas las posibles observaciones que sustenten una hipótesis dada. Por tanto, las conclusiones científicas deben permanecer sujetas a revisión si así lo exigen nuevos experimentos u observaciones.</p>
+<p>Ahora, ¿Tienes en mente algún proyecto? 😃</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
   author = {O., Daniela},
   title = {**El Método Científico: La Base de La Investigación
     Científica**},

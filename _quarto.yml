@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  back-to-top-navigation: true
   page-navigation: true
   title: "**La Biocolombianita**"
   site-url: https://labiocolombianita.netlify.app
