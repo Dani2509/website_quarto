@@ -10,7 +10,49 @@
 <atom:link href="https://labiocolombianita.netlify.app/Biologia.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.553</generator>
-<lastBuildDate>Sat, 10 Jun 2023 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>El método científico: la base de la investigación científica</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>¿cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el <strong>método científico</strong>, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la <strong>observación</strong> de un fenómeno.</p>
+<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/ilustration_m.jpg" class="img-fluid" style="float: left;" width="250"></p>
+<p>Dicha observación te conduce a una <strong>pregunta</strong> en el que busca establecer la razón de dicho fenómeno. Luego de esto, se fórmula una hipótesis. Una <strong>hipótesis</strong>, es una suposición que se ofrece como una posible explicación a la pregunta. Para que sea útil, la hipótesis debe llevar a una <strong>predicción</strong>, expresada por lo regular en un enunciado condicional: <em>“si… entonces…”</em>. La predicción se somete a prueba mediante experimentos controlados. Los <strong>experimentos</strong> producen resultados que sostienen o refutan la hipótesis, con lo que el investigador puede llegar a una conclusión sobre la validez de ésta. Un experimento único nunca es una base suficiente para llegar a una conclusión; el mismo investigador y otros deben poder repetir los resultados y obtener las mismas conclusiones, siempre y cuando se realicen bajo los mismos parámetros y con las mismas variables.</p>
+<p>Los experimentos ponen a prueba la afirmación de que un factor único (una variable) es la causa de una observación en particular. Para ser válido desde el punto de vista científico, el experimento debe descartar otras posibles variables como la causa de la observación. Por eso, los biólogos incluyen controles en sus experimentos. Las situaciones de control, en las que todas las variables que no se prueban se mantienen constantes, se comparan con la situación experimental.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/pasos.jpg" class="img-fluid figure-img" width="419"></p>
+<figcaption>Etapas del método científico</figcaption>
+</figure>
+</div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+  author = {O., Daniela},
+  title = {**El Método Científico: La Base de La Investigación
+    Científica**},
+  date = {2024-05-10},
+  url = {https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+O., Daniela. 2024. <span>“**El Método Científico: La Base de La
+Investigación Científica**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico">https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico</a>.
+</div></div></section></div> ]]></description>
+  <category>Investigación</category>
+  <category>Método científico</category>
+  <category>Descubrimiento</category>
+  <category>ciencia</category>
+  <guid>https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/</guid>
+  <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/metodo.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>La ciencia basada en hechos observables</title>
   <dc:creator>Daniela O.</dc:creator>
