@@ -11,7 +11,7 @@ website:
     prefs-text: "Change cookies 🍪"
   page-footer:
     border: true
-    background: "#f8f9fa"
+    background: "#f5f3f4"
     foreground: "#212529"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right: 
