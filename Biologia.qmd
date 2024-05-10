@@ -1,5 +1,5 @@
 ---
-title: "<center>Lecciones {{< fa flask-vial >}} avances<center> "
+title: "<center>Lecciones {{< iconify ph plant-fill >}} avances<center> "
 subtitle: "<center>Explorando los Misterios de la Vida: Un Viaje Fascinante a través de la Biología<center>" 
 listing:
   contents: Biologia

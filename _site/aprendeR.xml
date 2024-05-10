@@ -129,6 +129,7 @@ O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="
 
 
 
+
 <p><img src="https://labiocolombianita.netlify.app/aprendeR/post1/open_data.jpg" class="img-fluid"></p>
 <p>Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.</p>
 <section id="abriendo-bases-de-datos" class="level2">
@@ -194,11 +195,11 @@ font-style: inherit;">str</span>(datos)</span><div class="code-annotation-gutter
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-annotation="1" data-code-lines="3" data-code-cell="annotated-cell-2">Entre paréntesis agregas el nombre de la base de datos</span>
+<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">Entre paréntesis agregas el nombre de la base de datos</span>
 </dd>
 <dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-annotation="2" data-code-lines="6" data-code-cell="annotated-cell-2">Otra opción para observar la estructura es <code>glimpse()</code></span>
+<span data-code-cell="annotated-cell-2" data-code-lines="6" data-code-annotation="2">Otra opción para observar la estructura es <code>glimpse()</code></span>
 </dd>
 </dl>
 </div>
@@ -255,7 +256,7 @@ font-style: inherit;">head</span>(data)</span><div class="code-annotation-gutter
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-annotation="3" data-code-lines="2" data-code-cell="annotated-cell-4">Con este comando puedes observar las 6 primeras filas del dataset</span>
+<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="3">Con este comando puedes observar las 6 primeras filas del dataset</span>
 </dd>
 </dl>
 </div>
@@ -275,7 +276,7 @@ font-style: inherit;">head</span>(data)</span><div class="code-annotation-gutter
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2023,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2023,
   author = {O., Daniela},
   title = {**¿Cómo Abrir Bases de Datos En {R} y Observar Su
     Estructura?**},
