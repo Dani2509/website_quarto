@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.553">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
 <meta name="author" content="Daniela O.">
 <meta name="description" content="Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo">
+
 <title>La Biocolombianita - Guía para instalar R y Rstudio</title>
 <style>
 code{white-space: pre-wrap;}
@@ -21,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -57,6 +60,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -73,6 +77,7 @@ div.csl-right-inline {
 div.csl-indent {
   margin-left: 2em;
 }</style>
+
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
@@ -91,13 +96,20 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
@@ -106,11 +118,14 @@ div.csl-indent {
     "search-more-match-text": "resultado adicional en este documento",
     "search-more-matches-text": "resultados adicionales en este documento",
     "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancelar",
     "search-submit-button-title": "Enviar",
     "search-label": "Buscar"
   }
-}</script><script type="text/javascript" charset="UTF-8">
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
 cookieconsent.run({
   "notice_banner_type":"simple",
@@ -121,17 +136,27 @@ cookieconsent.run({
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
+  ,
+"language":"es"
   });
 });
-</script><style>html{ scroll-behavior: smooth; }</style>
+</script> 
+  
+<style>html{ scroll-behavior: smooth; }</style>
+
+
 </head>
+
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../media/logo.ico" alt="" class="navbar-logo"></a>
+    <img src="../../media/logo.ico" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
     </a>
@@ -142,64 +167,70 @@ cookieconsent.run({
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target=""><i class="bi bi-house-door" role="img">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door" role="img">
 </i> 
- <span class="menu-text">Inicio</span></a>
+<span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Biologia.html" rel="" target=""><i class="bi bi-tree" role="img">
+    <a class="nav-link" href="../../Biologia.html"> <i class="bi bi-tree" role="img">
 </i> 
- <span class="menu-text">Biologia</span></a>
+<span class="menu-text">Biologia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../aprendeR.html" rel="" target=""><i class="bi bi-journal-code" role="img">
+    <a class="nav-link" href="../../aprendeR.html"> <i class="bi bi-journal-code" role="img">
 </i> 
- <span class="menu-text">Aprende R</span></a>
+<span class="menu-text">Aprende R</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/Daniela_Osqui" rel="" target=""><i class="bi bi-twitter" role="img">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/Daniela_Osqui"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.instagram.com/labiocolombianita/" rel="" target=""><i class="bi bi-instagram" role="img">
+    <a class="nav-link" href="https://www.instagram.com/labiocolombianita/"> <i class="bi bi-instagram" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Dani2509" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/Dani2509"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-<div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">En esta página</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
    
   <ul>
-<li><a href="#qu%C3%A9-es-r-y-rstudio" id="toc-qué-es-r-y-rstudio" class="nav-link active" data-scroll-target="#qu%C3%A9-es-r-y-rstudio">¿ Qué es R y Rstudio ?</a></li>
+  <li><a href="#qué-es-r-y-rstudio" id="toc-qué-es-r-y-rstudio" class="nav-link active" data-scroll-target="#qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</a></li>
   <li><a href="#instalando-r" id="toc-instalando-r" class="nav-link" data-scroll-target="#instalando-r">Instalando R 🚀</a></li>
   <li><a href="#instalando-rstudio" id="toc-instalando-rstudio" class="nav-link" data-scroll-target="#instalando-rstudio">Instalando Rstudio 💻</a></li>
   <li><a href="#personalizando-el-entorno-de-rstudio" id="toc-personalizando-el-entorno-de-rstudio" class="nav-link" data-scroll-target="#personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</a></li>
-  <li>
-<a href="#personalizando-library-rsthemes" id="toc-personalizando-library-rsthemes" class="nav-link" data-scroll-target="#personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></a>
+  <li><a href="#personalizando-library-rsthemes" id="toc-personalizando-library-rsthemes" class="nav-link" data-scroll-target="#personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></a>
   <ul class="collapse">
-<li><a href="#bibliograf%C3%ADa" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliograf%C3%ADa">Bibliografía</a></li>
+  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
+  </ul></li>
   </ul>
-</li>
-  </ul></nav>
+</nav>
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title"><strong>Guía para instalar R y Rstudio</strong></h1>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
@@ -234,20 +265,31 @@ cookieconsent.run({
   </div>
   
 
-</header><div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="instalarr.jpg" class="img-fluid figure-img"></p>
+
+</header>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
+<section id="qué-es-r-y-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
-</section><section id="instalando-r" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
+</section>
+<section id="instalando-r" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
-<div class="cell column-page quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="cell column-page quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="CRAN.jpg" class="img-fluid"></p>
 </div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="CRAN_mirrors.jpg" class="img-fluid"></p>
 </div>
 </div>
@@ -256,31 +298,44 @@ cookieconsent.run({
 <p>Al hacer clic sobre <code>Download R for Windows</code> seremos dirigidos a otra página. Allí haremos clic sobre <code>install R for the first time</code> (esta opción sale cuando es la primera vez que lo instalas).</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="descargar.jpg" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="descargar.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
-</section><section id="instalando-rstudio" class="level2"><h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+</section>
+<section id="instalando-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="rstudio.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Instalar Rstudio</figcaption></figure>
+<figure class="figure">
+<p><img src="rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalar Rstudio</figcaption>
+</figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
-</section><section id="personalizando-el-entorno-de-rstudio" class="level2"><h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+</section>
+<section id="personalizando-el-entorno-de-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="personalizar.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption></figure>
+<figure class="figure">
+<p><img src="personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption>Personalizando el entorno de Rstudio</figcaption>
+</figure>
 </div>
-</section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
-</h2>
-<p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+</section>
+<section id="personalizando-library-rsthemes" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
+<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Consola</strong></pre>
 </div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># instalando paquete </span></span>
+<div class="sourceCode" id="cb1" data-filename="Consola"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># instalando paquete </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"devtools"</span><span class="kw">)</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">devtools::install_github</span><span class="er">(</span><span class="st">"gadenbuie/rsthemes"</span><span class="kw">)</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -291,14 +346,18 @@ cookieconsent.run({
 
 
 
-</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list">
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
 <div id="ref-rafa-2020" class="csl-entry" role="listitem">
 Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
 </div>
 <div id="ref-ulises-2019" class="csl-entry" role="listitem">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
   author = {O., Daniela},
   title = {**Guía para instalar R y Rstudio**},
   date = {2024-04-22},
@@ -307,10 +366,18 @@ Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., 
 }
 </code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas" role="listitem">
 O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-R">https://labiocolombianita.netlify.app/aprendeR/instalar-R</a>
-</div></div></section></div></main><!-- /main --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+</div></div></section></div></main> <!-- /main -->
+
+
+
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 <style type="text/css">
 #share-container span {
@@ -365,7 +432,73 @@ const linkedIn = document.querySelector('.linkedin');
 linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
 const telegram = document.querySelector('.telegram');
 telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
-</script><script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Support Me', '#28b5e0', 'E1E2XEZQI');kofiwidget2.draw();</script><script id="quarto-html-after-body" type="application/javascript">
+</script>
+  
+
+
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Support Me', '#28b5e0', 'E1E2XEZQI');kofiwidget2.draw();</script> 
+
+
+  
+
+
+
+  <!-- ... -->
+
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+
+  <!-- Add umami tracking code -->
+
+  <script defer="" src="https://umami-db-pi.vercel.app/custom" data-website-id="226aa2e0-95c8-4114-be92-0dc1755fcce4"></script>
+
+
+
+
+
+
+
+  <!-- ... -->
+
+  <div id="waline"></div>
+
+  <script type="module">
+
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+
+
+    init({
+
+      el: '#waline',
+
+      serverURL: 'commentblog-dani2509s-projects.vercel.app',
+
+      // path: window.location.pathname.replace(/index\.html$/, ''),
+
+      lang: 'en',
+
+      reaction: [
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44d.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/2753.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44f.png',
+
+  ],
+
+    });
+
+  </script>
+
+  
+
+  
+
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -444,10 +577,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/labiocolombianita\.netlify\.app");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -457,8 +612,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -470,7 +634,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -514,6 +801,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -539,6 +827,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -596,30 +910,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("https:\/\/labiocolombianita\.netlify\.app");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
-</script><script src="https://giscus.app/client.js" data-repo="dani2509/website_quarto" data-repo-id="R_kgDOJwDitA" data-category="General" data-category-id="DIC_kwDOJwDitM4CX-HZ" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">Blog made with 💜 and <a href="https://quarto.org/">Quarto</a>, by Daniela O. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</div>   
-    <div class="nav-footer-center"><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Change cookies 🍪</a></div></div>
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Blog made with 💜 and <a href="https://quarto.org/">Quarto</a>, by Daniela O. License: <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Change cookies 🍪</a></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
-<li class="nav-item compact">
+    <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/Daniela_Osqui">
       <i class="bi bi-twitter" role="img">
 </i> 
@@ -638,11 +942,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </a>
   </li>  
 </ul>
-</div>
+    </div>
   </div>
 </footer>
-</div>
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+
+
+</div><script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
