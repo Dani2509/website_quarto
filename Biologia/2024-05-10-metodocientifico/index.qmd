@@ -10,17 +10,21 @@ image: "metodo.jpg"
 title-block-banner: false
 ---
 
+## ¿ Qué es el método científico ?
+
 ¿Cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el **método científico**, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la **observación** de un fenómeno.
 
-![](ilustration_m.jpg){style="float: right;" width="250"}
+![Creación propia](ilustration_m.png){fig-align="center" width="394"}
 
 Dicha observación te conduce a una **pregunta** en el que busca establecer la razón de dicho fenómeno. Luego de esto, se fórmula una hipótesis. Una **hipótesis**, es una suposición que se ofrece como una posible explicación a la pregunta. Para que sea útil, la hipótesis debe llevar a una **predicción**, expresada por lo regular en un enunciado condicional: *“si... entonces...”*. La predicción se somete a prueba mediante experimentos controlados. Los **experimentos** producen resultados que sostienen o refutan la hipótesis, con lo que el investigador puede llegar a una conclusión sobre la validez de ésta. Un experimento único nunca es una base suficiente para llegar a una conclusión; el mismo investigador y otros deben poder repetir los resultados y obtener las mismas conclusiones, siempre y cuando se realicen bajo los mismos parámetros y con las mismas variables.
 
 Los experimentos ponen a prueba la afirmación de que un factor único (una variable) es la causa de una observación en particular. Para ser válido desde el punto de vista científico, el experimento debe descartar otras posibles variables como la causa de la observación. Por eso, los biólogos incluyen controles en sus experimentos. Las situaciones de control, en las que todas las variables que no se prueban se mantienen constantes, se comparan con la situación experimental.
 
 ::: {style="text-align:center;"}
-![Etapas del método científico. Creación propia](pasos.jpg){fig-align="center"}
+![Etapas del método científico. Creación propia](pasos.jpg){fig-align="center" width="460"}
 :::
+
+A principios del siglo XVII
 
 El método científico es potente, pero es importante entender sus limitaciones. En particular, los científicos casi nunca están seguros de haber controlado todas las posibles variables o de haber hecho todas las posibles observaciones que sustenten una hipótesis dada. Por tanto, las conclusiones científicas deben permanecer sujetas a revisión si así lo exigen nuevos experimentos u observaciones.
 
