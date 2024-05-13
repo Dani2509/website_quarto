@@ -8,24 +8,39 @@ date: 2024-05-10
 categories: [Investigación, Método científico, Descubrimiento, ciencia]
 image: "metodo.jpg"
 title-block-banner: false
+lang: es
 ---
 
 ## ¿ Qué es el método científico ?
 
 ¿Cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el **método científico**, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la **observación** de un fenómeno.
 
-![Creación propia](ilustration_m.png){fig-align="center" width="394"}
+::: {style="text-align:center;"}
+![Ilustración ¿Cómo se hace ciencia? (*Creación propia*)](ilustration_m.png){fig-align="center" width="394"}
+:::
 
 Dicha observación te conduce a una **pregunta** en el que busca establecer la razón de dicho fenómeno. Luego de esto, se fórmula una hipótesis. Una **hipótesis**, es una suposición que se ofrece como una posible explicación a la pregunta. Para que sea útil, la hipótesis debe llevar a una **predicción**, expresada por lo regular en un enunciado condicional: *“si... entonces...”*. La predicción se somete a prueba mediante experimentos controlados. Los **experimentos** producen resultados que sostienen o refutan la hipótesis, con lo que el investigador puede llegar a una conclusión sobre la validez de ésta. Un experimento único nunca es una base suficiente para llegar a una conclusión; el mismo investigador y otros deben poder repetir los resultados y obtener las mismas conclusiones, siempre y cuando se realicen bajo los mismos parámetros y con las mismas variables.
 
 Los experimentos ponen a prueba la afirmación de que un factor único (una variable) es la causa de una observación en particular. Para ser válido desde el punto de vista científico, el experimento debe descartar otras posibles variables como la causa de la observación. Por eso, los biólogos incluyen controles en sus experimentos. Las situaciones de control, en las que todas las variables que no se prueban se mantienen constantes, se comparan con la situación experimental.
 
 ::: {style="text-align:center;"}
-![Etapas del método científico. Creación propia](pasos.jpg){fig-align="center" width="460"}
+![Etapas del método científico. (*Creación propia*)](pasos.jpg){fig-align="center" width="460"}
 :::
 
-A principios del siglo XVII
+## Redi y su experimento
+
+A principios del siglo XVII, Francesco Redi aplicó 
+el método científico para probar la hipótesis de que las moscas no surgen espontáneamente de la carne en putrefacción. Redi observó que las moscas proliferaban alrededor de la 
+carne fresca y que aparecían gusanos en la carne que se abandonaba algunos días. Así, formuló una *hipótesis* que se podía someter a prueba: las moscas producen los gusanos. En su *experimento*, Redi quiso comprobar una única variable: el acceso de las moscas a la carne. Por tanto, tomó dos frascos limpios y los llenó con cantidades parecidas de carne. 
+Dejó un frasco destapado (el frasco control) y cubrió el otro con gasa para que no entraran las moscas (el frasco experimental). Hizo lo que pudo para mantener constantes otras variables (por ejemplo, el tipo de frasco, el tipo de carne y la temperatura). Al cabo de unos días, observó gusanos en la 
+carne del frasco destapado, pero ninguno en la carne del frasco tapado. Redi concluyó que su hipótesis era la correcta y que los gusanos eran producidos por las moscas, no por la carne muerta. 
 
 El método científico es potente, pero es importante entender sus limitaciones. En particular, los científicos casi nunca están seguros de haber controlado todas las posibles variables o de haber hecho todas las posibles observaciones que sustenten una hipótesis dada. Por tanto, las conclusiones científicas deben permanecer sujetas a revisión si así lo exigen nuevos experimentos u observaciones.
 
-Ahora, ¿Tienes en mente algún proyecto? 😃
+Y tú, ¿has aplicado el método científico en tu vida? 😃
+
+## Bibliografía
+
+Audesirk, T., Audesirk, G., & Byers, B. (2013b). Capítulo 1. Introducción a la vida en la Tierra. En Biología La vida en la tierra con fisiología (9.a ed., pp. 4-6). Pearson Educación de México.
+
+
