@@ -1,0 +1,37 @@
+---
+title: "**¿Cómo instalar librerías en Rstudio?**"
+description: |
+  Aprende a cómo instalar librerías en Rstudio (install.packages)
+author:
+  - name: Daniela O. 
+date: 2024-05-10
+categories: [Library, R, Rstudio]
+title-block-banner: false
+lang: es
+---
+
+Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.
+
+Sin embargo, para aquellos que son nuevos en R, el proceso de instalación de librerías puede resultar desafiante. En este artículo, encontraras dos opciones para instalar librerías de una forma sencilla.
+
+## Opción 1. Comando {{< bi code-slash color=#6297cd >}} `install.packages`
+
+Puedes instalar librerías en Rstudio ejecutando el siguiente comando en tu `consola` o en tu `script`
+
+``` {.bash filename="Code"}
+install.packages("nombre del paquete")
+```
+
+## Opción 2. Desde el panel de utilidades {{< bi mouse2 color=#6297cd >}}
+
+Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al `panel de utilidades` y darle clic a la ventana de `Packages`
+
+![seleccionar panel](panel.jpg){.images fig-align="center" width="467"}
+
+Una vez que nos vayamos al botón de `Packages`, le damos clic al botón de instalar
+
+![Instalando paquete](install.jpg){fig-align="center"}
+
+Ahora que ya sabes como instalar librerías solo hace falta llamarlas en R, para eso solo ejecuta en tu `script` o `consola` el comando `library()` y entre paréntesis el nombre de la librería que requieres utilizar 😁.
+
+Con esto ya estas listo para comenzar tus análisis en R. Espero que te haya gustado este post ❤️

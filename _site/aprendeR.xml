@@ -10,25 +10,196 @@
 <atom:link href="https://labiocolombianita.netlify.app/aprendeR.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.553</generator>
-<lastBuildDate>Mon, 22 Apr 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>¿Cómo instalar librerías en Rstudio?</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">.image</span> {</span>
+<span id="cb1-2"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">box-shadow</span><span class="ch" style="color: #20794D;
+background-color: null;
+font-style: inherit;">:</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rgba(</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.1</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">)</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">-1</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> </span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rgba(</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.06</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">)</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">-1</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">px</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">;</span></span>
+<span id="cb1-4">}</span></code></pre></div>
+<p>Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.</p>
+<p>Sin embargo, para aquellos que son nuevos en R, el proceso de instalación de librerías puede resultar desafiante. En este artículo, encontraras dos opciones para instalar librerías de una forma sencilla.</p>
+<section id="opción-1.-comando-install.packages" class="level2">
+<h2 class="anchored" data-anchor-id="opción-1.-comando-install.packages"><strong>Opción 1. Comando</strong>  <code>install.packages</code></h2>
+<p>Puedes instalar librerías en Rstudio ejecutando el siguiente comando en tu <code>consola</code> o en tu <code>script</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode" id="cb2" data-filename="Code" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">install.packages</span><span class="er" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"nombre del paquete"</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+</section>
+<section id="opción-2.-desde-el-panel-de-utilidades" class="level2">
+<h2 class="anchored" data-anchor-id="opción-2.-desde-el-panel-de-utilidades"><strong>Opción 2. Desde el panel de utilidades</strong> </h2>
+<p>Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al <code>panel de utilidades</code> y darle clic a la ventana de <code>Packages</code></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="img-fluid figure-img" width="467"></p>
+<figcaption>seleccionar panel</figcaption>
+</figure>
+</div>
+<p>Una vez que nos vayamos al botón de <code>Packages</code>, le damos clic al botón de instalar</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/install.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalando paquete</figcaption>
+</figure>
+</div>
+<p>Ahora que ya sabes como instalar librerías solo hace falta llamarlas en R, para eso solo ejecuta en tu <code>script</code> o <code>consola</code> el comando <code>library()</code> y entre paréntesis el nombre de la librería que requieres utilizar 😁.</p>
+<p>Con esto ya estas listo para comenzar tus análisis en R. Espero que te haya gustado este post ❤️</p>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+  author = {O., Daniela},
+  title = {**¿Cómo instalar librerías en Rstudio?**},
+  date = {2024-05-10},
+  url = {https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes},
+  langid = {es}
+}
+</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+O., Daniela. 2024. <span>“**¿Cómo instalar librerías en
+Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes">https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes</a>.
+</div></div></section></div> ]]></description>
+  <category>Library</category>
+  <category>R</category>
+  <category>Rstudio</category>
+  <guid>https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/</guid>
+  <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Guía para instalar R y Rstudio</title>
   <dc:creator>Daniela O.</dc:creator>
   <link>https://labiocolombianita.netlify.app/aprendeR/instalar-R/</link>
-  <description><![CDATA[ <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" class="img-fluid figure-img"></p>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
+<section id="qué-es-r-y-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
-</section><section id="instalando-r" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
+</section>
+<section id="instalando-r" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
-<div class="cell column-page quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div>
+
+</div>
+<div class="cell column-page quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/CRAN.jpg" class="img-fluid"></p>
 </div>
-<div class="cell-output-display quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/CRAN_mirrors.jpg" class="img-fluid"></p>
 </div>
 </div>
@@ -37,31 +208,44 @@
 <p>Al hacer clic sobre <code>Download R for Windows</code> seremos dirigidos a otra página. Allí haremos clic sobre <code>install R for the first time</code> (esta opción sale cuando es la primera vez que lo instalas).</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/descargar.jpg" class="img-fluid"></p>
+<div>
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/descargar.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
-</section><section id="instalando-rstudio" class="level2"><h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+</section>
+<section id="instalando-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Instalar Rstudio</figcaption></figure>
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalar Rstudio</figcaption>
+</figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
-</section><section id="personalizando-el-entorno-de-rstudio" class="level2"><h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+</section>
+<section id="personalizando-el-entorno-de-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure"><p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Personalizando el entorno de Rstudio</figcaption></figure>
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption>Personalizando el entorno de Rstudio</figcaption>
+</figure>
 </div>
-</section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
-</h2>
-<p>Puedes ampliar el abanico de temas mediante la <code><a href="https://github.com/gadenbuie/rsthemes">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+</section>
+<section id="personalizando-library-rsthemes" class="level2">
+<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
+<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Consola</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+<div class="sourceCode" id="cb1" data-filename="Consola" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># instalando paquete </span></span>
 <span id="cb1-2"><span class="ex" style="color: null;
@@ -98,14 +282,18 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 
 
-</section></section><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2">
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2">
 <div id="ref-rafa-2020" class="csl-entry">
 Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
 </div>
 <div id="ref-ulises-2019" class="csl-entry">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
   author = {O., Daniela},
   title = {**Guía para instalar R y Rstudio**},
   date = {2024-04-22},

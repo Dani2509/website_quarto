@@ -55,13 +55,12 @@ Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog "La Bio
 :::
 <br>
 
-::::{.animate__animated .animate__slideInLeft .animate__duration-250ms}
-
 # Lecciones y noticias 
 
 ::: {#Biologia}
 
 :::
+
 
 -----------------
 
@@ -70,4 +69,3 @@ Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog "La Bio
 ::: {#AprendeR}
 
 :::
-::::

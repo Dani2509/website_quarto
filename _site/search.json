@@ -18,14 +18,14 @@
     "href": "Biologia.html",
     "title": "\nLecciones  avances\n",
     "section": "",
-    "text": "El método científico: la base de la investigación científica\n\n\n\n\n\n\nInvestigación\n\n\nMétodo científico\n\n\nDescubrimiento\n\n\nciencia\n\n\n\nEn el apasionante mundo de la ciencia, el Método Científico se erige como el pilar fundamental para descubrir, comprender y explicar los fenómenos que nos rodean \n\n\n\n\n\nMay 10, 2024\n\n\nDaniela O.\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nLa ciencia basada en hechos observables\n\n\n\n\n\n\nCiencia\n\n\nArticulos\n\n\n\nDebemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos \n\n\n\n\n\nJun 10, 2023\n\n\nDaniela O.\n\n\n2 min\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n Back to top"
+    "text": "El método científico: la base de la investigación científica\n\n\n\n\n\n\nInvestigación\n\n\nMétodo científico\n\n\nDescubrimiento\n\n\nciencia\n\n\n\nEn el apasionante mundo de la ciencia, el Método Científico se erige como el pilar fundamental para descubrir, comprender y explicar los fenómenos que nos rodean \n\n\n\n\n\nMay 10, 2024\n\n\nDaniela O.\n\n\n3 min\n\n\n\n\n\n\n\n\n\n\n\n\nLa ciencia basada en hechos observables\n\n\n\n\n\n\nCiencia\n\n\nArticulos\n\n\n\nDebemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos \n\n\n\n\n\nJun 10, 2023\n\n\nDaniela O.\n\n\n2 min\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "aprendeR.html",
     "href": "aprendeR.html",
     "title": "\nAprende  programming\n",
     "section": "",
-    "text": "Guía para instalar R y Rstudio\n\n\n\nR\n\n\nRstudio\n\n\n\nAprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo\n\n\n\nDaniela O.\n\n\n22 abr 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\nTips\n\n\nbases de datos\n\n\n\nBases de datos en formato .csv, .xlsx, .txt\n\n\n\nDaniela O.\n\n\n10 jun 2023\n\n\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
+    "text": "¿Cómo instalar librerías en Rstudio?\n\n\n\nLibrary\n\n\nR\n\n\nRstudio\n\n\n\nAprende a cómo instalar librerías en Rstudio (install.packages)\n\n\n\nDaniela O.\n\n\n10 may 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuía para instalar R y Rstudio\n\n\n\nR\n\n\nRstudio\n\n\n\nAprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo\n\n\n\nDaniela O.\n\n\n22 abr 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\nTips\n\n\nbases de datos\n\n\n\nBases de datos en formato .csv, .xlsx, .txt\n\n\n\nDaniela O.\n\n\n10 jun 2023\n\n\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
   },
   {
     "objectID": "aprendeR/instalar-R/index.html#qué-es-r-y-rstudio",
@@ -166,5 +166,26 @@
     "title": "El método científico: la base de la investigación científica",
     "section": "Bibliografía",
     "text": "Bibliografía\nAudesirk, T., Audesirk, G., & Byers, B. (2013b). Capítulo 1. Introducción a la vida en la Tierra. En Biología La vida en la tierra con fisiología (9.a ed., pp. 4-6). Pearson Educación de México."
+  },
+  {
+    "objectID": "aprendeR/instalar-paquetes/index.html",
+    "href": "aprendeR/instalar-paquetes/index.html",
+    "title": "¿Cómo instalar librerías en Rstudio?",
+    "section": "",
+    "text": ".image {\nbox-shadow:rgba(0,0,0,0.1) 0px 4px 6px -1px, \nrgba(0,0,0,0.06) 0px 2px 4px -1px;\n}\nUna de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.\nSin embargo, para aquellos que son nuevos en R, el proceso de instalación de librerías puede resultar desafiante. En este artículo, encontraras dos opciones para instalar librerías de una forma sencilla."
+  },
+  {
+    "objectID": "aprendeR/instalar-paquetes/index.html#opción-1.-comando-install.packages",
+    "href": "aprendeR/instalar-paquetes/index.html#opción-1.-comando-install.packages",
+    "title": "¿Cómo instalar librerías en Rstudio?",
+    "section": "Opción 1. Comando  install.packages",
+    "text": "Opción 1. Comando  install.packages\nPuedes instalar librerías en Rstudio ejecutando el siguiente comando en tu consola o en tu script\n\n\nCode\n\ninstall.packages(\"nombre del paquete\")"
+  },
+  {
+    "objectID": "aprendeR/instalar-paquetes/index.html#opción-2.-desde-el-panel-de-utilidades",
+    "href": "aprendeR/instalar-paquetes/index.html#opción-2.-desde-el-panel-de-utilidades",
+    "title": "¿Cómo instalar librerías en Rstudio?",
+    "section": "Opción 2. Desde el panel de utilidades ",
+    "text": "Opción 2. Desde el panel de utilidades \nDesde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al panel de utilidades y darle clic a la ventana de Packages\n\n\n\n\n\n\n\n\n\n\n\n\nseleccionar panel\n\n\nUna vez que nos vayamos al botón de Packages, le damos clic al botón de instalar\n\n\n\nInstalando paquete\n\n\nAhora que ya sabes como instalar librerías solo hace falta llamarlas en R, para eso solo ejecuta en tu script o consola el comando library() y entre paréntesis el nombre de la librería que requieres utilizar 😁.\nCon esto ya estas listo para comenzar tus análisis en R. Espero que te haya gustado este post ❤️"
   }
 ]
