@@ -20,98 +20,21 @@
 
 
 
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">.image</span> {</span>
-<span id="cb1-2"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">box-shadow</span><span class="ch" style="color: #20794D;
-background-color: null;
-font-style: inherit;">:</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rgba(</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.1</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">)</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">6</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">-1</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> </span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">rgba(</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span><span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.06</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">)</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">2</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">4</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">-1</span><span class="dt" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">px</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">;</span></span>
-<span id="cb1-4">}</span></code></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/portada_instalar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="651"></p>
+</figure>
+</div>
 <p>Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.</p>
 <p>Sin embargo, para aquellos que son nuevos en R, el proceso de instalación de librerías puede resultar desafiante. En este artículo, encontraras dos opciones para instalar librerías de una forma sencilla.</p>
 <section id="opción-1.-comando-install.packages" class="level2">
-<h2 class="anchored" data-anchor-id="opción-1.-comando-install.packages"><strong>Opción 1. Comando</strong>  <code>install.packages</code></h2>
+<h2 class="anchored" data-anchor-id="opción-1.-comando-install.packages">Opción 1. Comando  <code>install.packages</code></h2>
 <p>Puedes instalar librerías en Rstudio ejecutando el siguiente comando en tu <code>consola</code> o en tu <code>script</code></p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Code</strong></pre>
 </div>
-<div class="sourceCode" id="cb2" data-filename="Code" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+<div class="sourceCode" id="cb1" data-filename="Code" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">install.packages</span><span class="er" style="color: #AD0000;
 background-color: null;
@@ -123,20 +46,11 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 </section>
 <section id="opción-2.-desde-el-panel-de-utilidades" class="level2">
-<h2 class="anchored" data-anchor-id="opción-2.-desde-el-panel-de-utilidades"><strong>Opción 2. Desde el panel de utilidades</strong> </h2>
+<h2 class="anchored" data-anchor-id="opción-2.-desde-el-panel-de-utilidades">Opción 2. Desde el panel de utilidades </h2>
 <p>Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al <code>panel de utilidades</code> y darle clic a la ventana de <code>Packages</code></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="img-fluid figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="img-fluid figure-img" width="467"></p>
+<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="images img-fluid figure-img" width="689"></p>
 <figcaption>seleccionar panel</figcaption>
 </figure>
 </div>
@@ -153,14 +67,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
-  author = {O., Daniela},
-  title = {**¿Cómo instalar librerías en Rstudio?**},
-  date = {2024-05-10},
-  url = {https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes},
-  langid = {es}
-}
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
 O., Daniela. 2024. <span>“**¿Cómo instalar librerías en
 Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes">https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes</a>.
 </div></div></section></div> ]]></description>
@@ -169,6 +76,7 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
   <category>Rstudio</category>
   <guid>https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/</guid>
   <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/portada_instalar.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Guía para instalar R y Rstudio</title>

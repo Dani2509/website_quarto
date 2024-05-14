@@ -8,7 +8,10 @@ date: 2024-05-10
 categories: [Library, R, Rstudio]
 title-block-banner: false
 lang: es
+image: "portada_instalar.png"
 ---
+
+![](portada_instalar.png){fig-align="center" width="651"}
 
 Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.
 
@@ -26,7 +29,7 @@ install.packages("nombre del paquete")
 
 Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al `panel de utilidades` y darle clic a la ventana de `Packages`
 
-![seleccionar panel](panel.jpg){.images fig-align="center" width="467"}
+![seleccionar panel](panel.jpg){.images fig-align="center" width="689"}
 
 Una vez que nos vayamos al botón de `Packages`, le damos clic al botón de instalar
 
