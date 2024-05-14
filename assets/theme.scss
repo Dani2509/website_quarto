@@ -23,6 +23,7 @@ $primary: #0096c7;
 $body-color:                 $black;
 $body-secondary:             #212529;
 
+
 // Fonts
 
 // stylelint-disable-next-line value-keyword-case
@@ -76,7 +77,7 @@ div.quarto-about-trestles .about-entity .about-links {
   }
   
 .navbar {
-    border-style: solid;
+    border-style: none;
     border-width: 0 0px 0px 0px;
     border-color: #5888b9;
 
@@ -87,6 +88,7 @@ div.quarto-about-trestles .about-entity .about-links {
     font-family: "Balsamiq Sans"!important;
     font-size: 1.2em;
 }
+
 
 a.kofi-button {
     box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);

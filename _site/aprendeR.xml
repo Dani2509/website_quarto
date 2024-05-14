@@ -201,14 +201,7 @@ Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzal
 <div id="ref-ulises-2019" class="csl-entry">
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
-</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
-  author = {O., Daniela},
-  title = {**Guía para instalar R y Rstudio**},
-  date = {2024-04-22},
-  url = {https://labiocolombianita.netlify.app/aprendeR/instalar-R},
-  langid = {es}
-}
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
 O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-R">https://labiocolombianita.netlify.app/aprendeR/instalar-R</a>
 </div></div></section></div> ]]></description>
   <category>R</category>

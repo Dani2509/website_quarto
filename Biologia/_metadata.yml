@@ -9,6 +9,7 @@ title-block-banner: false
 
 # default author and citation
 citation: true
+appendix-cite-as: display
 
 # no table of contents
 toc: true
