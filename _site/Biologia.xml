@@ -6,27 +6,27 @@
       version="2.0">
 <channel>
 <title>**La Biocolombianita**</title>
-<link>https://labiocolombianita.netlify.app/Biologia.html</link>
-<atom:link href="https://labiocolombianita.netlify.app/Biologia.xml" rel="self" type="application/rss+xml"/>
+<link>http://labiocolombianita.com/Biologia.html</link>
+<atom:link href="http://labiocolombianita.com/Biologia.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.553</generator>
 <lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>El método científico: la base de la investigación científica</title>
   <dc:creator>Daniela O.</dc:creator>
-  <link>https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/</link>
+  <link>http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/</link>
   <description><![CDATA[ 
 
 
 
 
 <section id="qué-es-el-método-científico" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-el-método-científico">¿ Qué es el método científico ?</h2>
+<h2 class="anchored" data-anchor-id="qué-es-el-método-científico">¿Qué es el método científico?</h2>
 <p>¿Cómo estudian los biólogos el funcionamiento de la vida? La investigación científica es un método riguroso para hacer observaciones de fenómenos específicos y buscar el orden en que se basan dichos fenómenos. La biología y las demás ciencias aplican el <strong>método científico</strong>, que consta de seis elementos relacionados: observación, pregunta, hipótesis, predicción, experimentación y conclusión. Toda investigación científica comienza con la <strong>observación</strong> de un fenómeno.</p>
 <div style="text-align:center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/ilustration_m.png" class="img-fluid figure-img" width="394"></p>
+<p><img src="http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/ilustration_m.png" class="img-fluid figure-img" width="394"></p>
 <figcaption>Ilustración ¿Cómo se hace ciencia? (<em>Creación propia</em>)</figcaption>
 </figure>
 </div>
@@ -36,7 +36,7 @@
 <div style="text-align:center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/pasos.jpg" class="img-fluid figure-img" width="460"></p>
+<p><img src="http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/pasos.jpg" class="img-fluid figure-img" width="460"></p>
 <figcaption>Etapas del método científico. (<em>Creación propia</em>)</figcaption>
 </figure>
 </div>
@@ -55,36 +55,28 @@
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">BibTeX</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2024,
-  author = {O., Daniela},
-  title = {**El método científico: la base de la investigación
-    científica**},
-  date = {2024-05-10},
-  url = {https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico},
-  langid = {es}
-}
-</code></pre><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
 O., Daniela. 2024. <span>“**El método científico: la base de la
-investigación científica**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico">https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico</a>.
+investigación científica**.”</span> May 10, 2024. <a href="http://labiocolombianita.com//Biologia/2024-05-10-metodocientifico">http://labiocolombianita.com//Biologia/2024-05-10-metodocientifico</a>.
 </div></div></section></div> ]]></description>
   <category>Investigación</category>
   <category>Método científico</category>
   <category>Descubrimiento</category>
   <category>ciencia</category>
-  <guid>https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/</guid>
+  <guid>http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/</guid>
   <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/Biologia/2024-05-10-metodocientifico/metodo.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/metodo.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>La ciencia basada en hechos observables</title>
   <dc:creator>Daniela O.</dc:creator>
-  <link>https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia/</link>
+  <link>http://labiocolombianita.com/Biologia/2023-06-10-ciencia/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia/boy.jpg" class="img-fluid" style="float: right;" width="250"></p>
+<p><img src="http://labiocolombianita.com/Biologia/2023-06-10-ciencia/boy.jpg" class="img-fluid" style="float: right;" width="250"></p>
 <p>La vista siempre ha jugado un papel fundamental al momento de hacer ciencia, pero también es cierto que debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos. Dos personas podrían estar mirando el mismo fenómeno, pero ser procesado de formas diferentes por cada individuo de acuerdo con sus experiencias previas y su manera de pensar. Por eso la colaboración científica y el trabajo en equipo se torna tan importante a la hora de generar conocimiento. Hay muchos factores que influyen al momento de hacer una observación puesto que lo que ve un observador resulta afectado por su conocimiento y experiencia, de ahí que la ciencia se deriva de los hechos observables, de las cosas que podemos ver, oír y tocar, mas no en la imaginación especulativa. De esta idea surge dos escuelas filosóficas que formalizan este pensamiento, los <strong>empiristas</strong><sup>1</sup> y <strong>positivistas</strong><sup>2</sup>. Para el empirismo la experiencia es la base de todo conocimiento, no solo en cuanto a su origen sino también en cuanto a su contenido. Se parte del mundo sensible para formar los conceptos y su justificación. Los positivistas también creen que el conocimiento se deriva exclusivamente de la experiencia de los fenómenos naturales difiriendo con los empiristas en que el conocimiento auténtico es conocimiento científico. Sin embargo, este aspecto está implícito en la constatación de que uno tiene que aprender para llegar a ser competente en ciencia.</p>
 <p>A pesar de esto uno como persona debe estar abierto a nuevos conocimientos, debe estar dispuesto a observar, más que a ver, porque cuando vemos no significa que analicemos lo que hay en nuestro alrededor, pasamos por alto cosas que creemos indispensables pero que pueden marcar la diferencia. Por consiguiente, la ciencia basada en los hechos solo puede ser verificada gracias al intercambio de información.</p>
 <p><strong>Bibliografía</strong></p>
@@ -97,28 +89,21 @@ investigación científica**.”</span> May 10, 2024. <a href="https://labiocolo
 
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>El empirismo es una doctrina filosófica y epistemológica que alude que todo conocimiento que posee o adquiere el hombre es producto de la experiencia↩︎</p></li>
 <li id="fn2"><p>Afirma que el único conocimiento auténtico es el conocimiento científico↩︎</p></li>
 </ol>
-</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2023,
-  author = {O., Daniela},
-  title = {**La Ciencia Basada En Hechos Observables**},
-  date = {2023-06-10},
-  url = {https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2023" class="csl-entry quarto-appendix-citeas">
+</section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2023" class="csl-entry quarto-appendix-citeas">
 O., Daniela. 2023. <span>“**La Ciencia Basada En Hechos
-Observables**.”</span> June 10, 2023. <a href="https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia">https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia</a>.
+Observables**.”</span> June 10, 2023. <a href="http://labiocolombianita.com//Biologia/2023-06-10-ciencia">http://labiocolombianita.com//Biologia/2023-06-10-ciencia</a>.
 </div></div></section></div> ]]></description>
   <category>Ciencia</category>
   <category>Articulos</category>
-  <guid>https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia/</guid>
+  <guid>http://labiocolombianita.com/Biologia/2023-06-10-ciencia/</guid>
   <pubDate>Sat, 10 Jun 2023 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/Biologia/2023-06-10-ciencia/think.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="http://labiocolombianita.com/Biologia/2023-06-10-ciencia/think.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

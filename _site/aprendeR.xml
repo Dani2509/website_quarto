@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>**La Biocolombianita**</title>
-<link>https://labiocolombianita.netlify.app/aprendeR.html</link>
-<atom:link href="https://labiocolombianita.netlify.app/aprendeR.xml" rel="self" type="application/rss+xml"/>
+<link>http://labiocolombianita.com/aprendeR.html</link>
+<atom:link href="http://labiocolombianita.com/aprendeR.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.553</generator>
 <lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>¿Cómo instalar librerías en Rstudio?</title>
   <dc:creator>Daniela O.</dc:creator>
-  <link>https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/</link>
+  <link>http://labiocolombianita.com/aprendeR/instalar-paquetes/</link>
   <description><![CDATA[ 
 
 
@@ -22,7 +22,7 @@
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/portada_instalar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="651"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-paquetes/portada_instalar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="651"></p>
 </figure>
 </div>
 <p>Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.</p>
@@ -48,18 +48,22 @@ font-style: inherit;">)</span></span></code></pre></div>
 <section id="opción-2.-desde-el-panel-de-utilidades" class="level2">
 <h2 class="anchored" data-anchor-id="opción-2.-desde-el-panel-de-utilidades">Opción 2. Desde el panel de utilidades </h2>
 <p>Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al <code>panel de utilidades</code> y darle clic a la ventana de <code>Packages</code></p>
+<div style="text-align:center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/panel.jpg" class="images img-fluid figure-img" width="689"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-paquetes/panel.jpg" class="images img-fluid figure-img" width="689"></p>
 <figcaption>seleccionar panel</figcaption>
 </figure>
 </div>
+</div>
 <p>Una vez que nos vayamos al botón de <code>Packages</code>, le damos clic al botón de instalar</p>
+<div style="text-align:center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/install.jpg" class="img-fluid figure-img"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-paquetes/install.jpg" class="img-fluid figure-img"></p>
 <figcaption>Instalando paquete</figcaption>
 </figure>
+</div>
 </div>
 <p>Ahora que ya sabes como instalar librerías solo hace falta llamarlas en R, para eso solo ejecuta en tu <code>script</code> o <code>consola</code> el comando <code>library()</code> y entre paréntesis el nombre de la librería que requieres utilizar 😁.</p>
 <p>Con esto ya estas listo para comenzar tus análisis en R. Espero que te haya gustado este post ❤️</p>
@@ -69,19 +73,19 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 <a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
 O., Daniela. 2024. <span>“**¿Cómo instalar librerías en
-Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes">https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes</a>.
+Rstudio?**.”</span> May 10, 2024. <a href="http://labiocolombianita.com//aprendeR/instalar-paquetes">http://labiocolombianita.com//aprendeR/instalar-paquetes</a>.
 </div></div></section></div> ]]></description>
   <category>Library</category>
   <category>R</category>
   <category>Rstudio</category>
-  <guid>https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/</guid>
+  <guid>http://labiocolombianita.com/aprendeR/instalar-paquetes/</guid>
   <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/aprendeR/instalar-paquetes/portada_instalar.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="http://labiocolombianita.com/aprendeR/instalar-paquetes/portada_instalar.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Guía para instalar R y Rstudio</title>
   <dc:creator>Daniela O.</dc:creator>
-  <link>https://labiocolombianita.netlify.app/aprendeR/instalar-R/</link>
+  <link>http://labiocolombianita.com/aprendeR/instalar-R/</link>
   <description><![CDATA[ 
 
 
@@ -89,7 +93,7 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <section id="qué-es-r-y-rstudio" class="level2">
@@ -105,10 +109,10 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
 <div class="cell column-page quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/CRAN.jpg" class="img-fluid"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/CRAN.jpg" class="img-fluid"></p>
 </div>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/CRAN_mirrors.jpg" class="img-fluid"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/CRAN_mirrors.jpg" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -118,7 +122,7 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/descargar.jpg" class="img-fluid figure-img"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/descargar.jpg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -130,7 +134,7 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
 <figcaption>Instalar Rstudio</figcaption>
 </figure>
 </div>
@@ -141,7 +145,7 @@ Rstudio?**.”</span> May 10, 2024. <a href="https://labiocolombianita.netlify.a
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
 <figcaption>Personalizando el entorno de Rstudio</figcaption>
 </figure>
 </div>
@@ -206,27 +210,27 @@ O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="
 </div></div></section></div> ]]></description>
   <category>R</category>
   <category>Rstudio</category>
-  <guid>https://labiocolombianita.netlify.app/aprendeR/instalar-R/</guid>
+  <guid>http://labiocolombianita.com/aprendeR/instalar-R/</guid>
   <pubDate>Mon, 22 Apr 2024 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/aprendeR/instalar-R/instalarr.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="http://labiocolombianita.com/aprendeR/instalar-R/instalarr.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>¿Cómo abrir bases de datos en R y observar su estructura?</title>
   <dc:creator>Daniela O.</dc:creator>
-  <link>https://labiocolombianita.netlify.app/aprendeR/post1/</link>
+  <link>http://labiocolombianita.com/aprendeR/post1/</link>
   <description><![CDATA[ 
 
 
 
 
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/post1/open_data.jpg" class="img-fluid"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/post1/open_data.jpg" class="img-fluid"></p>
 <p>Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.</p>
 <section id="abriendo-bases-de-datos" class="level2">
 <h2 class="anchored" data-anchor-id="abriendo-bases-de-datos">Abriendo bases de datos</h2>
 <p>En el panel del <code>Enviroment</code> nos dirigimos a la opción <code>Import Dataset</code> y seleccionamos el tipo de archivo, si es un documento <code>.xlsx, .txt o csv</code>. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.</p>
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/post1/fig-1.jpg" class="img-fluid" style="width:80.0%"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/post1/fig-1.jpg" class="img-fluid" style="width:80.0%"></p>
 <p>En esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.</p>
-<p><img src="https://labiocolombianita.netlify.app/aprendeR/post1/fig-2.jpg" class="img-fluid" style="width:80.0%"></p>
+<p><img src="http://labiocolombianita.com/aprendeR/post1/fig-2.jpg" class="img-fluid" style="width:80.0%"></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -365,23 +369,15 @@ font-style: inherit;">head</span>(data)</span><div class="code-annotation-gutter
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{o.2023,
-  author = {O., Daniela},
-  title = {**¿Cómo Abrir Bases de Datos En {R} y Observar Su
-    Estructura?**},
-  date = {2023-06-10},
-  url = {https://labiocolombianita.netlify.app/aprendeR/post1},
-  langid = {en}
-}
-</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2023" class="csl-entry quarto-appendix-citeas">
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2023" class="csl-entry quarto-appendix-citeas">
 O., Daniela. 2023. <span>“**¿Cómo Abrir Bases de Datos En R y Observar
-Su Estructura?**.”</span> June 10, 2023. <a href="https://labiocolombianita.netlify.app/aprendeR/post1">https://labiocolombianita.netlify.app/aprendeR/post1</a>.
+Su Estructura?**.”</span> June 10, 2023. <a href="http://labiocolombianita.com//aprendeR/post1">http://labiocolombianita.com//aprendeR/post1</a>.
 </div></div></section></div> ]]></description>
   <category>Tips</category>
   <category>bases de datos</category>
-  <guid>https://labiocolombianita.netlify.app/aprendeR/post1/</guid>
+  <guid>http://labiocolombianita.com/aprendeR/post1/</guid>
   <pubDate>Sat, 10 Jun 2023 05:00:00 GMT</pubDate>
-  <media:content url="https://labiocolombianita.netlify.app/aprendeR/post1/open_data.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="http://labiocolombianita.com/aprendeR/post1/open_data.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

@@ -16,12 +16,14 @@ $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
 $primary: #0096c7;
-
+$teal:    #0077b6;
+$active-bg-color: #e2eafc;
 
 
 // Body
 $body-color:                 $black;
 $body-secondary:             #212529;
+$link-color:                 $teal;
 
 
 // Fonts
@@ -76,18 +78,22 @@ div.quarto-about-trestles .about-entity .about-links {
     margin: 0em 0em 0em 0em;
   }
   
-.navbar {
-    border-style: none;
-    border-width: 0 0px 0px 0px;
-    border-color: #5888b9;
 
-}
 
 .navbar-brand {
     color: #fff;
     font-family: "Balsamiq Sans"!important;
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
+
+
+
+.navbar-custom .navbar-nav > .active > a {
+        color: #e2eafc !important;
+        background-color:transparent !important;
+    }
+
+
 
 
 a.kofi-button {
@@ -135,8 +141,14 @@ element.style {
     margin: 0 0 -0.5em 0;
 }
 
-.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active {
-    color: #eff5fb !important;
-}
+
+// eliminate decoration 
+
+
+
+
+
+
+
 
 
