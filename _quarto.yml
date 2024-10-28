@@ -1,11 +1,13 @@
 project:
   type: website
+  
 
 website:
   back-to-top-navigation: true
   page-navigation: true
   title: "**La Biocolombianita**"
-  site-url: http://labiocolombianita.com/
+  site-url: "http://labiocolombianita.com/"
+  google-analytics: "G-300PZZJ68V"
   favicon: media/logo.ico
   cookie-consent:
     type: express
@@ -16,7 +18,7 @@ website:
     foreground: "#212529"
     left: "Blog made with 💜 and [Quarto](https://quarto.org/), by Daniela O. License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)."
     right: 
-      - icon: twitter
+      - icon: twitter-x
         href: https://twitter.com/Daniela_Osqui
       - icon: instagram
         href: https://www.instagram.com/labiocolombianita/
@@ -54,6 +56,7 @@ format:
     toc: true
     smooth-scroll: true
     link-external-newwindow: true
+    link-external-icon: true
     code-link: true
     highlight-style: a11y
 
