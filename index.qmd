@@ -13,7 +13,7 @@ listing:
    sort: "date desc"
    sort-ui: false
    filter-ui: false
-   max-description-length: 70
+   max-description-length: 80
    image-height: "300"
  - id: AprendeR
    contents: aprendeR/**/*/index.qmd
@@ -21,7 +21,7 @@ listing:
    max-items: 3
    grid-columns: 3
    image-height: "300"
-   max-description-length: 70
+   max-description-length: 80
    fields: [image, date, title, description]
    sort: "date desc"
    sort-ui: false
@@ -34,7 +34,7 @@ about:
   links:
     - icon: instagram
       href: https://www.instagram.com/labiocolombianita/
-    - icon: twitter
+    - icon: twitter-x
       href: https://twitter.com/Daniela_Osqui
     - icon: github
       href: https://github.com/Dani2509
