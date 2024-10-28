@@ -9,7 +9,7 @@
 <link>http://labiocolombianita.com/aprendeR.html</link>
 <atom:link href="http://labiocolombianita.com/aprendeR.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.553</generator>
+<generator>quarto-1.4.555</generator>
 <lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
 <item>
   <title>¿Cómo instalar librerías en Rstudio?</title>
@@ -86,22 +86,13 @@ Rstudio?**.”</span> May 10, 2024. <a href="http://labiocolombianita.com//apren
   <title>Guía para instalar R y Rstudio</title>
   <dc:creator>Daniela O.</dc:creator>
   <link>http://labiocolombianita.com/aprendeR/instalar-R/</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+  <description><![CDATA[ <div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><img src="http://labiocolombianita.com/aprendeR/instalar-R/instalarr.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<section id="qué-es-r-y-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
+<section id="qué-es-r-y-rstudio" class="level2"><h2 class="anchored" data-anchor-id="qué-es-r-y-rstudio">¿ Qué es R y Rstudio ?</h2>
 <p>R es un lenguaje de programación (Open Source) y gratis utilizado para el análisis de datos. Rstudio es un entorno de desarrollo integrado (IDE) que sirve para manejar R y otros lenguajes de programación de manera más fácil. Ambos son programas muy populares en la academia y principalmente usados por investigadores científicos, profesores y estudiantes, y también por analistas financieros, actuarios y economistas</p>
-</section>
-<section id="instalando-r" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
+</section><section id="instalando-r" class="level2 page-columns page-full"><h2 class="anchored" data-anchor-id="instalando-r">Instalando R 🚀</h2>
 <p>Para instalar R en nuestro computador nos dirigimos a la página de <em>R projects:</em> <a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a> . Una vez allí le damos click en <strong>CRAN,</strong> y aquí nos remitirá a otro enlace en el que buscaremos y seleccionaremos nuestros país o el más próximo.</p>
 <div>
 
@@ -121,38 +112,28 @@ Rstudio?**.”</span> May 10, 2024. <a href="http://labiocolombianita.com//apren
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<figure class="figure">
-<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/descargar.jpg" class="img-fluid figure-img"></p>
+<figure class="figure"><p><img src="http://labiocolombianita.com/aprendeR/instalar-R/descargar.jpg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
 <p>En la siguiente ventana, haremos clic sobre <code>Download R 4.3.3 for windows</code> abrimos el archivo y lo ejecutamos en nuestro ordenador.</p>
-</section>
-<section id="instalando-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
+</section><section id="instalando-rstudio" class="level2"><h2 class="anchored" data-anchor-id="instalando-rstudio">Instalando Rstudio 💻</h2>
 <p>Para instalar Rstudio ingresamos a la página <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Seguimos y ejecutamos todos los pasos que nos indica el archivo.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
-<figcaption>Instalar Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="http://labiocolombianita.com/aprendeR/instalar-R/rstudio.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalar Rstudio</figcaption></figure>
 </div>
 <p>Felicidades ya tienes R y Rstudio 😁. Ahora procedemos a conocer el entorno de Rstudio y a cómo podemos personalizarlo.</p>
-</section>
-<section id="personalizando-el-entorno-de-rstudio" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
+</section><section id="personalizando-el-entorno-de-rstudio" class="level2"><h2 class="anchored" data-anchor-id="personalizando-el-entorno-de-rstudio">Personalizando el entorno de Rstudio 🖌️</h2>
 <p>Cuando abrimos Rstudio observamos el siguiente entorno ⏬ y como cualquier programa tenemos la opción de personalizarlo. Para eso no vamos al menú y seleccionamos <code>Tools</code> y <code>Global Options</code>. En <code>Appearance</code> seleccionamos el tema que nos guste, desde temas oscuros a claros. Una vez seleccionado el tema damos click en <code>Apply.</code></p>
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="http://labiocolombianita.com/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
-<figcaption>Personalizando el entorno de Rstudio</figcaption>
-</figure>
+<figure class="figure"><p><img src="http://labiocolombianita.com/aprendeR/instalar-R/personalizar.jpg" class="img-fluid figure-img"></p>
+<figcaption>Personalizando el entorno de Rstudio</figcaption></figure>
 </div>
-</section>
-<section id="personalizando-library-rsthemes" class="level2">
-<h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code></h2>
-<p>Puedes ampliar el abanico de temas mediante la <code>library(rsthemes)</code>. Para hacerlo instala el paquete de la siguiente manera:</p>
+</section><section id="personalizando-library-rsthemes" class="level2"><h2 class="anchored" data-anchor-id="personalizando-library-rsthemes">Personalizando: <code>library (rsthemes)</code>
+</h2>
+<p>Puedes ampliar el abanico de temas mediante la <code><a href="https://rdrr.io/r/base/library.html">library(rsthemes)</a></code>. Para hacerlo instala el paquete de la siguiente manera:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Consola</strong></pre>
@@ -194,11 +175,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 
 
-
-</section>
-</section>
-
-<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2">
+</section></section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliografía</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2">
 <div id="ref-rafa-2020" class="csl-entry">
 Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzalezgouveia.com/que-es-r-y-rstudio/">https://gonzalezgouveia.com/que-es-r-y-rstudio/</a>
 </div>
@@ -206,7 +183,7 @@ Rafa. (2020). <em><span>Qué es R y RStudio?</span></em> <a href="https://gonzal
 Ulises, J. (2019). <em><span>Instalación de R y RStudio</span></em> (1.ª ed., pp. 2-6).
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas">
-O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="https://labiocolombianita.netlify.app/aprendeR/instalar-R">https://labiocolombianita.netlify.app/aprendeR/instalar-R</a>
+O., D. (2024, April 22). <em>**Guía para instalar R y Rstudio**</em>. <a href="http://labiocolombianita.com//aprendeR/instalar-R">http://labiocolombianita.com//aprendeR/instalar-R</a>
 </div></div></section></div> ]]></description>
   <category>R</category>
   <category>Rstudio</category>

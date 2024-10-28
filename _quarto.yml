@@ -41,7 +41,7 @@ website:
         href: aprendeR.qmd
         icon: journal-code
     right:
-      - icon: twitter
+      - icon: twitter-x
         href: https://twitter.com/Daniela_Osqui
       - icon: instagram
         href: https://www.instagram.com/labiocolombianita/
@@ -56,7 +56,7 @@ format:
     toc: true
     smooth-scroll: true
     link-external-newwindow: true
-    link-external-icon: true
+    link-external-icon: false
     code-link: true
     highlight-style: a11y
 
