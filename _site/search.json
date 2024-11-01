@@ -46,7 +46,7 @@
     "href": "aprendeR.html",
     "title": "\nAprende  programming\n",
     "section": "",
-    "text": "¿Cómo instalar librerías en Rstudio?\n\n\n\nLibrary\n\n\nR\n\n\nRstudio\n\n\n\nAprende a cómo instalar librerías en Rstudio (install.packages)\n\n\n\nDaniela O.\n\n\n10 may 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuía para instalar R y Rstudio\n\n\n\nR\n\n\nRstudio\n\n\n\nAprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo\n\n\n\nDaniela O.\n\n\n22 abr 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\nTips\n\n\nbases de datos\n\n\n\nBases de datos en formato .csv, .xlsx, .txt\n\n\n\nDaniela O.\n\n\n10 jun 2023\n\n\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
+    "text": "¿Cómo crear presentaciones en Quarto?\n\n\n\nPresentación\n\n\nQuarto\n\n\nDiapositivas\n\n\nR\n\n\n\nAprende a cómo crear presentaciones en R con ayuda de Quarto para transmitir tus resultados.\n\n\n\nDaniela O\n\n\n25 oct 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo instalar librerías en Rstudio?\n\n\n\nLibrary\n\n\nR\n\n\nRstudio\n\n\n\nAprende a cómo instalar librerías en Rstudio (install.packages)\n\n\n\nDaniela O.\n\n\n10 may 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGuía para instalar R y Rstudio\n\n\n\nR\n\n\nRstudio\n\n\n\nAprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo personalizarlo\n\n\n\nDaniela O.\n\n\n22 abr 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n¿Cómo abrir bases de datos en R y observar su estructura?\n\n\n\nTips\n\n\nbases de datos\n\n\n\nBases de datos en formato .csv, .xlsx, .txt\n\n\n\nDaniela O.\n\n\n10 jun 2023\n\n\n\n\n\n\n\n\nNo hay resultados\n\n Volver arriba"
   },
   {
     "objectID": "aprendeR/instalar-R/index.html#qué-es-r-y-rstudio",
@@ -82,6 +82,20 @@
     "title": "Guía para instalar R y Rstudio",
     "section": "Personalizando: library (rsthemes)\n",
     "text": "Personalizando: library (rsthemes)\n\nPuedes ampliar el abanico de temas mediante la library(rsthemes). Para hacerlo instala el paquete de la siguiente manera:\n\n\nConsola\n\n# instalando paquete \ninstall.packages(\"devtools\")\ndevtools::install_github(\"gadenbuie/rsthemes\")\n\nrsthemes::install_rsthemes(include_base16 = TRUE)\n\nEspero que este post te haya ayudado ❤️"
+  },
+  {
+    "objectID": "aprendeR/2024-presentacion-quarto/index.html",
+    "href": "aprendeR/2024-presentacion-quarto/index.html",
+    "title": "¿Cómo crear presentaciones en Quarto?",
+    "section": "",
+    "text": "Slides  Code"
+  },
+  {
+    "objectID": "aprendeR/2024-presentacion-quarto/index.html#diapositivas",
+    "href": "aprendeR/2024-presentacion-quarto/index.html#diapositivas",
+    "title": "¿Cómo crear presentaciones en Quarto?",
+    "section": "Diapositivas",
+    "text": "Diapositivas"
   },
   {
     "objectID": "aprendeR/instalar-paquetes/index.html",

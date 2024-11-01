@@ -19,9 +19,3 @@ title-block-banner: false
 
 ------------------------------------
 
-::::{.animate__animated .animate__slideInLeft .animate__duration-220ms}
-
-:::{#Biologia}
-:::
-
-::::

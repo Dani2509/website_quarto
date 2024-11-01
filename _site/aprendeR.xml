@@ -10,7 +10,37 @@
 <atom:link href="http://labiocolombianita.com/aprendeR.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.555</generator>
-<lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 25 Oct 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>¿Cómo crear presentaciones en Quarto?</title>
+  <dc:creator>Daniela O</dc:creator>
+  <link>http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><span class="listing-btn-group"> <a href="https://dani-5.quarto.pub/presentacion-rladies/" class="btn" style="text-align: center;"><i class="fa-solid fa-display" aria-label="display"></i> Slides</a> <a href="https://github.com/Dani2509/Presentacion_Quarto_Rladies" class="btn" style="text-align: center;"><i class="fa-brands fa-github" aria-label="github"></i> Code</a> </span></p>
+<section id="diapositivas" class="level2">
+<h2 class="anchored" data-anchor-id="diapositivas">Diapositivas</h2>
+<iframe class="slides" src="https://dani-5.quarto.pub/presentacion-rladies/">
+</iframe>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o2024" class="csl-entry quarto-appendix-citeas">
+O, Daniela. 2024. <span>“**¿Cómo Crear Presentaciones En
+Quarto?**.”</span> October 25, 2024. <a href="http://labiocolombianita.com//aprendeR/2024-presentacion-quarto">http://labiocolombianita.com//aprendeR/2024-presentacion-quarto</a>.
+</div></div></section></div> ]]></description>
+  <category>Presentación</category>
+  <category>Quarto</category>
+  <category>Diapositivas</category>
+  <category>R</category>
+  <guid>http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/</guid>
+  <pubDate>Fri, 25 Oct 2024 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/quarto_new.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>¿Cómo instalar librerías en Rstudio?</title>
   <dc:creator>Daniela O.</dc:creator>

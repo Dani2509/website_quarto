@@ -22,8 +22,9 @@ $active-bg-color: #e2eafc;
 
 // Body
 $body-color:                 $black;
-$body-secondary:             #212529;
+$body-secondary:             #212;
 $link-color:                 $teal;
+
 
 
 // Fonts
@@ -86,13 +87,10 @@ div.quarto-about-trestles .about-entity .about-links {
     font-size: 1.0em;
 }
 
-
-
 .navbar-custom .navbar-nav > .active > a {
         color: #e2eafc !important;
         background-color:transparent !important;
     }
-
 
 
 
@@ -142,13 +140,42 @@ element.style {
 }
 
 
-// eliminate decoration 
+.card {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}
 
 
 
+// Slide iframes
+
+.slides {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-style: none;
+  border-width: 1px;
+}
 
 
+.btn {
+    color: #595959 !important;
+    background-color: #ffffff !important;
+    border-color: #7d8383 !important;
+    font-weight: 200 !important;
+    border-radius: 8px !important;
+    border-width: 1px 1px !important;
+    text-transform: lowercase !important;
+    line-height: 0.5 !important;
+}
 
+.listing-btn-group {
+  display: inline-block;
+  gap: 1em;
+  justify-content: center !important;
+}
 
 
 

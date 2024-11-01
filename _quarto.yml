@@ -55,7 +55,6 @@ format:
       - assets/theme.scss
     toc: true
     smooth-scroll: true
-    link-external-newwindow: true
     link-external-icon: false
     code-link: true
     highlight-style: a11y
