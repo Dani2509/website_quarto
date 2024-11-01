@@ -2,7 +2,7 @@
 title: "<center>**Aprende {{< iconify fa6-brands r-project >}} programming**<center>"
 subtitle: "<center>SIG | Data science | Estadística<center>" 
 listing:
-- id: AprendeR
+ - id: AprendeR
    contents: aprendeR
    feed: true
    sort: "date desc"

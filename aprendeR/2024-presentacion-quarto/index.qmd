@@ -13,8 +13,8 @@ toc: false
 
 
 <span class="listing-btn-group">
-<a href="https://dani-5.quarto.pub/presentacion-rladies/" class="btn" style="text-align: center;" role="button">{{< fa display >}} Slides</a> 
-<a href="https://github.com/Dani2509/Presentacion_Quarto_Rladies" class="btn" style="text-align: center;" role="button">{{< fa brands github >}} Code</a>
+<a href="https://dani-5.quarto.pub/presentacion-rladies/" class="btn" style="text-align: center;" role="button">{{< iconify ph images-light >}} Slides</a> 
+<a href="https://github.com/Dani2509/Presentacion_Quarto_Rladies" class="btn" style="text-align: center;" role="button">{{< iconify ri github-fill >}} Code</a>
 </span>
 
 ## Diapositivas
