@@ -2,18 +2,23 @@
 title: "<center>**Aprende {{< iconify fa6-brands r-project >}} programming**<center>"
 subtitle: "<center>SIG | Data science | Estadística<center>" 
 listing:
-  contents: aprendeR
-  feed: true
-  sort: "date desc"
-  type: grid
-  date-format: medium
-  categories: numbered
-  sort-ui: false
-  filter-ui: false
-  fields: [image, date, title, description, categories, author]  
+- id: AprendeR
+   contents: aprendeR
+   feed: true
+   sort: "date desc"
+   type: grid
+   date-format: medium
+   categories: numbered
+   sort-ui: false
+   filter-ui: false
+   fields: [image, date, title, description, categories, author]  
 page-layout: full
 title-block-banner: false
 lang: es
 ---
 
 --------------------------------
+
+::: {#AprendeR}
+
+:::

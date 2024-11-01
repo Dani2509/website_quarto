@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>**La Biocolombianita**</title>
+<link>http://labiocolombianita.com/aprendeR.html</link>
+<atom:link href="http://labiocolombianita.com/aprendeR.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.4.555</generator>
+<lastBuildDate>Fri, 25 Oct 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/aprendeR/2024-presentacion-quarto/index.html}</title>
+  <dc:creator>Daniela O</dc:creator>
+  <link>http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/</link>
+  <description>{B4F502887207:/aprendeR/2024-presentacion-quarto/index.html}</description>
+  <category>Presentación</category>
+  <category>Quarto</category>
+  <category>Diapositivas</category>
+  <category>R</category>
+  <guid>http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/</guid>
+  <pubDate>Fri, 25 Oct 2024 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/aprendeR/2024-presentacion-quarto/quarto_new.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/aprendeR/instalar-paquetes/index.html}</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>http://labiocolombianita.com/aprendeR/instalar-paquetes/</link>
+  <description>{B4F502887207:/aprendeR/instalar-paquetes/index.html}</description>
+  <category>Library</category>
+  <category>R</category>
+  <category>Rstudio</category>
+  <guid>http://labiocolombianita.com/aprendeR/instalar-paquetes/</guid>
+  <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/aprendeR/instalar-paquetes/portada_instalar.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/aprendeR/instalar-R/index.html}</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>http://labiocolombianita.com/aprendeR/instalar-R/</link>
+  <description>{B4F502887207:/aprendeR/instalar-R/index.html}</description>
+  <category>R</category>
+  <category>Rstudio</category>
+  <guid>http://labiocolombianita.com/aprendeR/instalar-R/</guid>
+  <pubDate>Mon, 22 Apr 2024 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/aprendeR/instalar-R/instalarr.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/aprendeR/post1/index.html}</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>http://labiocolombianita.com/aprendeR/post1/</link>
+  <description>{B4F502887207:/aprendeR/post1/index.html}</description>
+  <category>Tips</category>
+  <category>bases de datos</category>
+  <guid>http://labiocolombianita.com/aprendeR/post1/</guid>
+  <pubDate>Sat, 10 Jun 2023 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/aprendeR/post1/open_data.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

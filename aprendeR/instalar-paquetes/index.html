@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniela O.">
+<meta name="description" content="Aprende a cómo instalar librerías en Rstudio (install.packages)">
 
-<title>La Biocolombianita - La Biocolombianita</title>
+<title>La Biocolombianita - ¿Cómo instalar librerías en Rstudio?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +22,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/logo.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/logo.ico" rel="icon">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -57,76 +92,19 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Biologia .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Biologia'] = new List('listing-Biologia', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-AprendeR .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-AprendeR'] = new List('listing-AprendeR', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-300PZZJ68V"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -149,42 +127,13 @@ cookieconsent.run({
   "preferences_center_close_button_hide":false,
   "website_name":""
   ,
-"language":"en"
+"language":"es"
   });
 });
 </script> 
   
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -195,31 +144,31 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo.ico" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../media/logo.ico" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Biologia.html"> <i class="bi bi-tree" role="img">
+    <a class="nav-link" href="../../Biologia.html"> <i class="bi bi-tree" role="img">
 </i> 
 <span class="menu-text">Biologia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./aprendeR.html"> <i class="bi bi-journal-code" role="img">
+    <a class="nav-link" href="../../aprendeR.html"> <i class="bi bi-journal-code" role="img">
 </i> 
 <span class="menu-text">Aprende R</span></a>
   </li>  
@@ -248,193 +197,310 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#opción-1.-comando-install.packages" id="toc-opción-1.-comando-install.packages" class="nav-link active" data-scroll-target="#opción-1.-comando-install.packages">Opción 1. Comando <i class="bi-code-slash " style="color: #6297cd;" role="img" aria-hidden="true"></i> <code>install.packages</code></a></li>
+  <li><a href="#opción-2.-desde-el-panel-de-utilidades" id="toc-opción-2.-desde-el-panel-de-utilidades" class="nav-link" data-scroll-target="#opción-2.-desde-el-panel-de-utilidades">Opción 2. Desde el panel de utilidades <i class="bi-mouse2 " style="color: #6297cd;" role="img" aria-hidden="true"></i></a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content column-page">
-  <div class="about-entity">
-    <img src="media/foto.jpg" class="about-image
-  round " style="height: 14em; width: 14em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">La Biocolombianita</h1>
-<p class="subtitle lead">Divulgación en Biología &amp; <iconify-icon inline="" icon="fa6-brands:r-project" aria-label="Icon r-project from fa6-brands Iconify.design set." title="Icon r-project from fa6-brands Iconify.design set."></iconify-icon> programming</p>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title"><strong>¿Cómo instalar librerías en Rstudio?</strong></h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Library</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Rstudio</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Aprende a cómo instalar librerías en Rstudio <code>(install.packages)</code></p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor/a</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniela O. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">10 de mayo de 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.instagram.com/labiocolombianita/" class="about-link" rel="" target="">
-    <i class="bi bi-instagram"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://twitter.com/Daniela_Osqui" class="about-link" rel="" target="">
-    <i class="bi bi-twitter-x"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/Dani2509" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="portada_instalar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="651"></p>
+</figure>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<section id="bienvenidos" class="level2">
-<h2 data-anchor-id="bienvenidos"><strong>¡Bienvenidos!</strong></h2>
-<p>Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.</p>
-<blockquote class="blockquote">
-<p><em>Si una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)</em> <iconify-icon inline="" icon="bi:feather" aria-label="Icon feather from bi Iconify.design set." title="Icon feather from bi Iconify.design set."></iconify-icon></p>
-</blockquote>
-<p><code>Para cualquier inquietud escríbeme a: labiocolombianita@gmail.com</code></p>
+<p>Una de las características más poderosas de R es su capacidad para extender su funcionalidad mediante la instalación de librerías. Estas librerías ofrecen una amplia gama de funciones y herramientas especializadas que permiten a los usuarios realizar análisis complejos y visualizaciones de datos de manera eficiente.</p>
+<p>Sin embargo, para aquellos que son nuevos en R, el proceso de instalación de librerías puede resultar desafiante. En este artículo, encontraras dos opciones para instalar librerías de una forma sencilla.</p>
+<section id="opción-1.-comando-install.packages" class="level2">
+<h2 class="anchored" data-anchor-id="opción-1.-comando-install.packages">Opción 1. Comando <i class="bi-code-slash " style="color: #6297cd;" role="img" aria-hidden="true"></i> <code>install.packages</code></h2>
+<p>Puedes instalar librerías en Rstudio ejecutando el siguiente comando en tu <code>consola</code> o en tu <code>script</code></p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Code</strong></pre>
+</div>
+<div class="sourceCode" id="cb1" data-filename="Code"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">install.packages</span><span class="er">(</span><span class="st">"nombre del paquete"</span><span class="kw">)</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-</div></div>
-</div>
-
-<p><br></p>
-<section id="lecciones-y-noticias" class="level1">
-<h1>Lecciones y noticias</h1>
-<div id="listing-Biologia" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Investigación,Método científico,Descubrimiento,ciencia" data-listing-date-sort="1715317200000" data-listing-file-modified-sort="1715996933371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="576">
-<a href="./Biologia/2024-05-10-metodocientifico/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./Biologia/2024-05-10-metodocientifico/metodo.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="lecciones-y-noticias">
-<strong>El método científico: la base de la investigación científica</strong>
-</h5>
-<div class="card-text listing-description">
-En el apasionante mundo de la ciencia, el Método Científico se erige como el pilar…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 10, 2024
+<section id="opción-2.-desde-el-panel-de-utilidades" class="level2">
+<h2 class="anchored" data-anchor-id="opción-2.-desde-el-panel-de-utilidades">Opción 2. Desde el panel de utilidades <i class="bi-mouse2 " style="color: #6297cd;" role="img" aria-hidden="true"></i></h2>
+<p>Desde las opciones que dentro de Rstudio puedes instalar o activar librerías fácilmente. Para eso debes dirigirte al <code>panel de utilidades</code> y darle clic a la ventana de <code>Packages</code></p>
+<div style="text-align:center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="panel.jpg" class="images img-fluid figure-img" width="689"></p>
+<figcaption>seleccionar panel</figcaption>
+</figure>
 </div>
 </div>
+<p>Una vez que nos vayamos al botón de <code>Packages</code>, le damos clic al botón de instalar</p>
+<div style="text-align:center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="install.jpg" class="img-fluid figure-img"></p>
+<figcaption>Instalando paquete</figcaption>
+</figure>
 </div>
 </div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Ciencia,Articulos" data-listing-date-sort="1686373200000" data-listing-file-modified-sort="1715653663117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="384">
-<a href="./Biologia/2023-06-10-ciencia/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./Biologia/2023-06-10-ciencia/think.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>La ciencia basada en hechos observables</strong>
-</h5>
-<div class="card-text listing-description">
-<p>Debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 10, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<hr>
-</section>
-<section id="tutoriales-con-r" class="level1">
-<h1>Tutoriales con R</h1>
-<div id="listing-AprendeR" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Presentación,Quarto,Diapositivas,R" data-listing-date-sort="1729832400000" data-listing-file-modified-sort="1730495640734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<a href="./aprendeR/2024-presentacion-quarto/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/2024-presentacion-quarto/quarto_new.png" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="tutoriales-con-r">
-<strong>¿Cómo crear presentaciones en Quarto?</strong>
-</h5>
-<div class="card-text listing-description">
-Aprende a cómo crear presentaciones en R con ayuda de Quarto para transmitir tus…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Oct 25, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Library,R,Rstudio" data-listing-date-sort="1715317200000" data-listing-file-modified-sort="1715996507896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
-<a href="./aprendeR/instalar-paquetes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/instalar-paquetes/portada_instalar.png" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>¿Cómo instalar librerías en Rstudio?</strong>
-</h5>
-<div class="card-text listing-description">
-<p>Aprende a cómo instalar librerías en Rstudio <code>(install.packages)</code></p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 10, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="R,Rstudio" data-listing-date-sort="1713762000000" data-listing-file-modified-sort="1714410693608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
-<a href="./aprendeR/instalar-R/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/instalar-R/instalarr.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>Guía para instalar R y Rstudio</strong>
-</h5>
-<div class="card-text listing-description">
-Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
-
+<p>Ahora que ya sabes como instalar librerías solo hace falta llamarlas en R, para eso solo ejecuta en tu <code>script</code> o <code>consola</code> el comando <code>library()</code> y entre paréntesis el nombre de la librería que requieres utilizar 😁.</p>
+<p>Con esto ya estas listo para comenzar tus análisis en R. Espero que te haya gustado este post ❤️</p>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Volver arriba</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Cómo citar</h2><div><div class="quarto-appendix-secondary-label">Por favor, cita este trabajo como:</div><div id="ref-o.2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+O., Daniela. 2024. <span>“**¿Cómo instalar librerías en
+Rstudio?**.”</span> May 10, 2024. <a href="http://labiocolombianita.com//aprendeR/instalar-paquetes">http://labiocolombianita.com//aprendeR/instalar-paquetes</a>.
+</div></div></section></div></main> <!-- /main -->
+
+
+
+
+
+
+
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style type="text/css">
+
+#share-container span {
+
+display: block;
+
+margin: 1rem auto;
+
+font-size: 20px;
+
+}
+
+#share-buttons i {
+
+font-size: 26px;
+
+margin: 5px;
+
+}
+
+.facebook {
+
+color: #3b5998;
+
+}
+
+.twitter {
+
+color: #55acee;
+
+}
+
+.linkedin {
+
+color: #0077b5;
+
+}
+
+.telegram {
+
+color: #229ED9;
+
+}
+
+.facebook, .twitter, .linkedin, .telegram {
+
+opacity: 0.9;
+
+}
+
+.facebook:hover, .twitter:hover, .linkedin:hover, .whatsapp:hover, .telegram:hover {
+
+opacity: 0.9;
+
+}
+
+</style>
+
+<div id="share-container">
+
+<span>Comparte:</span>
+
+<div id="share-buttons">
+
+<!-- facebook -->
+
+<a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+<!-- twitter -->
+
+<a class="twitter" target="blank"><i class="fab fa-twitter"></i></a>
+
+<!-- linkedin -->
+
+<a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
+
+<!-- telegram -->
+
+<a class="telegram" target="blank"><i class="fab fa-telegram"></i></a>
+
+</div>
+
+<script>
+
+const link = encodeURI('https://openjavascript.info');
+
+const msg = encodeURIComponent('Hey, I found this article');
+
+const title = encodeURIComponent('Article or Post Title Here');
+
+const fb = document.querySelector('.facebook');
+
+fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+const twitter = document.querySelector('.twitter');
+
+twitter.href = `http://twitter.com/share?&url=${link}&text=${msg}&hashtags=javascript,programming`;
+
+const linkedIn = document.querySelector('.linkedin');
+
+linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+
+const telegram = document.querySelector('.telegram');
+
+telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
+
+</script>
+
+  
+
+
+
+
+
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Support Me', '#28b5e0', 'E1E2XEZQI');kofiwidget2.draw();</script> 
+
+
+  
+
+
+
+  <!-- ... -->
+
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+
+  <!-- Add umami tracking code -->
+
+  <script defer="" src="https://umami-db-pi.vercel.app/custom" data-website-id="226aa2e0-95c8-4114-be92-0dc1755fcce4"></script>
+
+
+
+
+
+
+
+  <!-- ... -->
+
+  <div id="waline"></div>
+
+  <script type="module">
+
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+
+
+    init({
+
+      el: '#waline',
+
+      serverURL: 'commentblog-dani2509s-projects.vercel.app',
+
+      // path: window.location.pathname.replace(/index\.html$/, ''),
+
+      lang: 'en',
+
+      reaction: [
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44d.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/2753.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44f.png',
+
+  ],
+
+    });
+
+  </script>
+
+  
+
+  
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -455,6 +521,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -482,12 +555,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -874,5 +947,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</div><script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

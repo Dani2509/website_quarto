@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>**La Biocolombianita**</title>
+<link>http://labiocolombianita.com/Biologia.html</link>
+<atom:link href="http://labiocolombianita.com/Biologia.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.4.555</generator>
+<lastBuildDate>Fri, 10 May 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/Biologia/2024-05-10-metodocientifico/index.html}</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/</link>
+  <description>{B4F502887207:/Biologia/2024-05-10-metodocientifico/index.html}</description>
+  <category>Investigación</category>
+  <category>Método científico</category>
+  <category>Descubrimiento</category>
+  <category>ciencia</category>
+  <guid>http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/</guid>
+  <pubDate>Fri, 10 May 2024 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/Biologia/2024-05-10-metodocientifico/metodo.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/Biologia/2023-06-10-ciencia/index.html}</title>
+  <dc:creator>Daniela O.</dc:creator>
+  <link>http://labiocolombianita.com/Biologia/2023-06-10-ciencia/</link>
+  <description>{B4F502887207:/Biologia/2023-06-10-ciencia/index.html}</description>
+  <category>Ciencia</category>
+  <category>Articulos</category>
+  <guid>http://labiocolombianita.com/Biologia/2023-06-10-ciencia/</guid>
+  <pubDate>Sat, 10 Jun 2023 05:00:00 GMT</pubDate>
+  <media:content url="http://labiocolombianita.com/Biologia/2023-06-10-ciencia/think.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>

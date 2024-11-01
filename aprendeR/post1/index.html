@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Daniela O.">
+<meta name="dcterms.date" content="2023-06-10">
+<meta name="description" content="Bases de datos en formato .csv, .xlsx, .txt">
 
-<title>La Biocolombianita - La Biocolombianita</title>
+<title>La Biocolombianita - ¿Cómo abrir bases de datos en R y observar su estructura?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./media/logo.ico" rel="icon">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../media/logo.ico" rel="icon">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,63 +105,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Biologia .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Biologia'] = new List('listing-Biologia', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-AprendeR .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-AprendeR'] = new List('listing-AprendeR', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-300PZZJ68V"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -156,35 +134,6 @@ cookieconsent.run({
   
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -195,10 +144,10 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./media/logo.ico" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../media/logo.ico" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title"><strong>La Biocolombianita</strong></span>
     </a>
   </div>
@@ -209,17 +158,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Biologia.html"> <i class="bi bi-tree" role="img">
+    <a class="nav-link" href="../../Biologia.html"> <i class="bi bi-tree" role="img">
 </i> 
 <span class="menu-text">Biologia</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./aprendeR.html"> <i class="bi bi-journal-code" role="img">
+    <a class="nav-link" href="../../aprendeR.html"> <i class="bi bi-journal-code" role="img">
 </i> 
 <span class="menu-text">Aprende R</span></a>
   </li>  
@@ -248,193 +197,371 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#abriendo-bases-de-datos" id="toc-abriendo-bases-de-datos" class="nav-link active" data-scroll-target="#abriendo-bases-de-datos">Abriendo bases de datos</a></li>
+  <li><a href="#abriendo-bases-de-datos-con-código" id="toc-abriendo-bases-de-datos-con-código" class="nav-link" data-scroll-target="#abriendo-bases-de-datos-con-código">Abriendo bases de datos con código</a>
+  <ul class="collapse">
+  <li><a href="#datos-de-excel" id="toc-datos-de-excel" class="nav-link" data-scroll-target="#datos-de-excel">Datos de Excel</a></li>
+  <li><a href="#datos-csv" id="toc-datos-csv" class="nav-link" data-scroll-target="#datos-csv">Datos CSV</a></li>
+  <li><a href="#datos-en-extensión-.txt" id="toc-datos-en-extensión-.txt" class="nav-link" data-scroll-target="#datos-en-extensión-.txt">Datos en extensión .txt</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content column-page">
-  <div class="about-entity">
-    <img src="media/foto.jpg" class="about-image
-  round " style="height: 14em; width: 14em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">La Biocolombianita</h1>
-<p class="subtitle lead">Divulgación en Biología &amp; <iconify-icon inline="" icon="fa6-brands:r-project" aria-label="Icon r-project from fa6-brands Iconify.design set." title="Icon r-project from fa6-brands Iconify.design set."></iconify-icon> programming</p>
-</div>
-<div class="quarto-title-meta column-page">
+<h1 class="title"><strong>¿Cómo abrir bases de datos en R y observar su estructura?</strong></h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Tips</div>
+    <div class="quarto-category">bases de datos</div>
   </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>Bases de datos en formato .csv, .xlsx, .txt</p>
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Daniela O. </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 10, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.instagram.com/labiocolombianita/" class="about-link" rel="" target="">
-    <i class="bi bi-instagram"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://twitter.com/Daniela_Osqui" class="about-link" rel="" target="">
-    <i class="bi bi-twitter-x"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/Dani2509" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
+
+
+<p><img src="open_data.jpg" class="img-fluid"></p>
+<p>Antes de empezar con la exploración de los datos. Debemos aprender a leer los datos y conocer su estructura; cuántas observaciones tenemos, número de columnas y que variables son cuantitativas y cuales cualitativas.</p>
+<section id="abriendo-bases-de-datos" class="level2">
+<h2 class="anchored" data-anchor-id="abriendo-bases-de-datos">Abriendo bases de datos</h2>
+<p>En el panel del <code>Enviroment</code> nos dirigimos a la opción <code>Import Dataset</code> y seleccionamos el tipo de archivo, si es un documento <code>.xlsx, .txt o csv</code>. Esto nos abrirá una ventana emergente y seleccionaremos nuestra base de datos a visualizar.</p>
+<p><img src="fig-1.jpg" class="img-fluid" style="width:80.0%"></p>
+<p>En esta ventana emergente, una vez que tengamos seleccionada nuestra base de datos procedemos a copiar el código que aparece en la parte inferior y lo pegamos en nuestro script. Así cada vez que quieras abrir la base de datos solo debes correr el código.</p>
+<p><img src="fig-2.jpg" class="img-fluid" style="width:80.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<section id="bienvenidos" class="level2">
-<h2 data-anchor-id="bienvenidos"><strong>¡Bienvenidos!</strong></h2>
-<p>Hola amigos eucariontes 😀. Mi nombre es Daniela, la creadora del blog “La Biocolombianita”. Un espacio en el que se busca divulgar de forma divertida y sencilla temas relacionados con la biología. Además si te gusta el mundo del Data Science y usas Rstudio. Aquí encontraras temas relacionados con la estadística, análisis de pruebas, figuras exploratorias y estadística multivariada con R y Rstudio.</p>
-<blockquote class="blockquote">
-<p><em>Si una persona es perseverante, aunque le cueste entender, se hará inteligente y aunque sea débil se volverá fuerte (Leonardo da Vinci)</em> <iconify-icon inline="" icon="bi:feather" aria-label="Icon feather from bi Iconify.design set." title="Icon feather from bi Iconify.design set."></iconify-icon></p>
-</blockquote>
-<p><code>Para cualquier inquietud escríbeme a: labiocolombianita@gmail.com</code></p>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cuando le das en <code>Import Dataset</code> <code>From text (base)</code> es para archivos en formato <code>.txt</code> y <code>From Text (readr)</code> es para archivos .<code>csv</code> en el que las columnas están separadas por puntos y no comas.</p>
+</div>
+</div>
 </section>
-</div></div>
+<section id="abriendo-bases-de-datos-con-código" class="level2">
+<h2 class="anchored" data-anchor-id="abriendo-bases-de-datos-con-código">Abriendo bases de datos con código</h2>
+<p>También puedes abrir bases de datos escribiendo el siguiente código en tu script</p>
+<section id="datos-de-excel" class="level3">
+<h3 class="anchored" data-anchor-id="datos-de-excel">Datos de Excel</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pegas la ruta de la carpeta en donde esta el archivo </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># setwd("ruta de la carpeta donde esta el archivo")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-
-<p><br></p>
-<section id="lecciones-y-noticias" class="level1">
-<h1>Lecciones y noticias</h1>
-<div id="listing-Biologia" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Investigación,Método científico,Descubrimiento,ciencia" data-listing-date-sort="1715317200000" data-listing-file-modified-sort="1715996933371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="576">
-<a href="./Biologia/2024-05-10-metodocientifico/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./Biologia/2024-05-10-metodocientifico/metodo.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="lecciones-y-noticias">
-<strong>El método científico: la base de la investigación científica</strong>
-</h5>
-<div class="card-text listing-description">
-En el apasionante mundo de la ciencia, el Método Científico se erige como el pilar…
+<p>Cuando pegas la ruta cambia el signo <code>\</code> por este <code>/</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-2"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-2-1"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># luego ejecutas el siguiente comando</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-3" class="code-annotation-target"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"Iris.xlsx"</span>)</span>
+<span id="annotated-cell-2-4"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># observar la estructura de nuetro dataset</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-6" class="code-annotation-target"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="3" data-code-annotation="1">Entre paréntesis agregas el nombre de la base de datos</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="6" data-code-annotation="2">Otra opción para observar la estructura es <code>glimpse()</code></span>
+</dd>
+</dl>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 10, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Ciencia,Articulos" data-listing-date-sort="1686373200000" data-listing-file-modified-sort="1715653663117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="384">
-<a href="./Biologia/2023-06-10-ciencia/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./Biologia/2023-06-10-ciencia/think.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>La ciencia basada en hechos observables</strong>
-</h5>
-<div class="card-text listing-description">
-<p>Debemos tener cuidado con lo que observamos pues no siempre resulta ser lo que creemos</p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Jun 10, 2023
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [150 × 6] (S3: tbl_df/tbl/data.frame)
+ $ Species_No  : num [1:150] 1 1 1 1 1 1 1 1 1 1 ...
+ $ Petal_width : num [1:150] 0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Petal_length: num [1:150] 1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Sepal_width : num [1:150] 3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Sepal_length: num [1:150] 5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Species_name: chr [1:150] "Setosa" "Setosa" "Setosa" "Setosa" ...</code></pre>
 </div>
 </div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-<hr>
 </section>
-<section id="tutoriales-con-r" class="level1">
-<h1>Tutoriales con R</h1>
-<div id="listing-AprendeR" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Presentación,Quarto,Diapositivas,R" data-listing-date-sort="1729832400000" data-listing-file-modified-sort="1730495640734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="24">
-<a href="./aprendeR/2024-presentacion-quarto/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/2024-presentacion-quarto/quarto_new.png" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="tutoriales-con-r">
-<strong>¿Cómo crear presentaciones en Quarto?</strong>
-</h5>
-<div class="card-text listing-description">
-Aprende a cómo crear presentaciones en R con ayuda de Quarto para transmitir tus…
+<section id="datos-csv" class="level3">
+<h3 class="anchored" data-anchor-id="datos-csv">Datos CSV</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>datos<span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">"Iris.csv"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Oct 25, 2024
+</section>
+<section id="datos-en-extensión-.txt" class="level3">
+<h3 class="anchored" data-anchor-id="datos-en-extensión-.txt">Datos en extensión .txt</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="at">file =</span> <span class="st">"Iris.txt"</span>, <span class="at">header =</span> <span class="cn">TRUE</span>)</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(data)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="3">Con este comando puedes observar las 6 primeras filas del dataset</span>
+</dd>
+</dl>
 </div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Library,R,Rstudio" data-listing-date-sort="1715317200000" data-listing-file-modified-sort="1715996507896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
-<a href="./aprendeR/instalar-paquetes/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/instalar-paquetes/portada_instalar.png" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>¿Cómo instalar librerías en Rstudio?</strong>
-</h5>
-<div class="card-text listing-description">
-<p>Aprende a cómo instalar librerías en Rstudio <code>(install.packages)</code></p>
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 10, 2024
+<div class="cell-output cell-output-stdout">
+<pre><code>  Species_No Petal_width Petal_length Sepal_width Sepal_length Species_name
+1          1         0,2          1,4         3,5          5,1       Setosa
+2          1         0,2          1,4           3          4,9       Setosa
+3          1         0,2          1,3         3,2          4,7       Setosa
+4          1         0,2          1,5         3,1          4,6       Setosa
+5          1         0,2          1,4         3,6            5       Setosa
+6          1         0,4          1,7         3,9          5,4       Setosa</code></pre>
 </div>
 </div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="R,Rstudio" data-listing-date-sort="1713762000000" data-listing-file-modified-sort="1714410693608" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
-<a href="./aprendeR/instalar-R/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./aprendeR/instalar-R/instalarr.jpg" class="thumbnail-image card-img" style="height: 300;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-<strong>Guía para instalar R y Rstudio</strong>
-</h5>
-<div class="card-text listing-description">
-Aprende a instalar R y Rstudio y familiarizate con el entorno de trabajo y a cómo…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-Apr 22, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-
-
+<p>Espero que te haya servido de ayuda estos consejos 😀</p>
 
 
 </section>
+</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-o.2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+O., Daniela. 2023. <span>“**¿Cómo Abrir Bases de Datos En R y Observar
+Su Estructura?**.”</span> June 10, 2023. <a href="http://labiocolombianita.com//aprendeR/post1">http://labiocolombianita.com//aprendeR/post1</a>.
+</div></div></section></div></main> <!-- /main -->
+
+
+
+
+
+
+
+
+   <meta charset="UTF-8">
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Document</title>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<style type="text/css">
+
+#share-container span {
+
+display: block;
+
+margin: 1rem auto;
+
+font-size: 20px;
+
+}
+
+#share-buttons i {
+
+font-size: 26px;
+
+margin: 5px;
+
+}
+
+.facebook {
+
+color: #3b5998;
+
+}
+
+.twitter {
+
+color: #55acee;
+
+}
+
+.linkedin {
+
+color: #0077b5;
+
+}
+
+.telegram {
+
+color: #229ED9;
+
+}
+
+.facebook, .twitter, .linkedin, .telegram {
+
+opacity: 0.9;
+
+}
+
+.facebook:hover, .twitter:hover, .linkedin:hover, .whatsapp:hover, .telegram:hover {
+
+opacity: 0.9;
+
+}
+
+</style>
+
+<div id="share-container">
+
+<span>Comparte:</span>
+
+<div id="share-buttons">
+
+<!-- facebook -->
+
+<a class="facebook" target="blank"><i class="fab fa-facebook"></i></a>
+
+<!-- twitter -->
+
+<a class="twitter" target="blank"><i class="fab fa-twitter"></i></a>
+
+<!-- linkedin -->
+
+<a class="linkedin" target="blank"><i class="fab fa-linkedin"></i></a>
+
+<!-- telegram -->
+
+<a class="telegram" target="blank"><i class="fab fa-telegram"></i></a>
+
+</div>
+
+<script>
+
+const link = encodeURI('https://openjavascript.info');
+
+const msg = encodeURIComponent('Hey, I found this article');
+
+const title = encodeURIComponent('Article or Post Title Here');
+
+const fb = document.querySelector('.facebook');
+
+fb.href = `https://www.facebook.com/share.php?u=${link}`;
+
+const twitter = document.querySelector('.twitter');
+
+twitter.href = `http://twitter.com/share?&url=${link}&text=${msg}&hashtags=javascript,programming`;
+
+const linkedIn = document.querySelector('.linkedin');
+
+linkedIn.href = `https://www.linkedin.com/sharing/share-offsite/?url=${link}`;
+
+const telegram = document.querySelector('.telegram');
+
+telegram.href = `https://telegram.me/share/url?url=${link}&text=${msg}`;
+
+</script>
+
+  
+
+
+
+
+
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Support Me', '#28b5e0', 'E1E2XEZQI');kofiwidget2.draw();</script> 
+
+
+  
+
+
+
+  <!-- ... -->
+
+  <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css">
+
+  <!-- Add umami tracking code -->
+
+  <script defer="" src="https://umami-db-pi.vercel.app/custom" data-website-id="226aa2e0-95c8-4114-be92-0dc1755fcce4"></script>
+
+
+
+
+
+
+
+  <!-- ... -->
+
+  <div id="waline"></div>
+
+  <script type="module">
+
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+
+
+    init({
+
+      el: '#waline',
+
+      serverURL: 'commentblog-dani2509s-projects.vercel.app',
+
+      // path: window.location.pathname.replace(/index\.html$/, ''),
+
+      lang: 'en',
+
+      reaction: [
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44d.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/2753.png',
+
+    'https://unpkg.com/@waline/emojis@1.1.0/tw/1f44f.png',
+
+  ],
+
+    });
+
+  </script>
+
+  
+
+  
+
+
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -455,6 +582,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -874,5 +1008,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</div><script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
