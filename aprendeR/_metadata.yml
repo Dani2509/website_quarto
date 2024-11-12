@@ -11,7 +11,7 @@ title-block-banner: false
 citation: true
 appendix-cite-as: display
 
-# no table of contents
+# table of contents
 toc: true
 
 # Include something after every blog post with hand-made html-file
@@ -20,6 +20,7 @@ format:
     include-after-body:
       - ../body_footer.html
       - ../kofi.html
+      - ../suscribe.html
       - ../comments.html
 
 # comments:

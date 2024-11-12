@@ -20,5 +20,7 @@ format:
     include-after-body: 
       - ../body_footer.html
       - ../kofi.html
+      - ../suscribe.html
       - ../comments.html
+
 
